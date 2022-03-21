@@ -1,5 +1,6 @@
 import React from "react";
 import "../Homepage.css";
+import "../../Layout.css";
 import img1Carrosel from "../../../assets/img/img1carroselHomepage.jpg";
 import img2Carrosel from "../../../assets/img/img2carroselHomepage.jpg";
 import img3Carrosel from "../../../assets/img/img3carroselHomepage.jpg";
