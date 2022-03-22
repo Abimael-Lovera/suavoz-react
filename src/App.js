@@ -9,7 +9,7 @@ function App() {
 		<div>
 			{/* <Homepage /> */}
 			{/* <SobreNos /> */}
-			{/* <SeusDireitos /> */}
+			<SeusDireitos />
 		</div>
 	);
 }

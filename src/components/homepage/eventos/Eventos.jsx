@@ -1,6 +1,6 @@
-import Djamila from "../../../assets/img/Djamila-Ribeiro.jpg";
-import Silvio from "../../../assets/img/silvioalmeida.jpg";
-import Sueli from "../../../assets/img/sueli-carneiro.jpg";
+import Djamila from "../../../assets/Djamila-Ribeiro.jpg";
+import Silvio from "../../../assets/silvioalmeida.jpg";
+import Sueli from "../../../assets/sueli-carneiro.jpg";
 import "../Homepage.css";
 
 export default function Eventos() {

@@ -214,7 +214,30 @@
 	padding: 2rem 0 2rem;
 }
 
-.questions_padding {
+.accordion-body{
+	text-align: left;
+}
+
+.accordion-button {
+	background-color: #262626;
+	color: #fbf2c0;
+	outline: none;
+	border: none;
+}
+.accordion-button:not(.collapsed) {
+	background-color: #bf8069;
+	color: #fbf2c0;
+}
+.accordion-button:not(.collapsed)::after {
+	background-image: none;
+}
+
+
+.accordion-header{
+	border-radius: 0,7rem;
+	background-color: none;
+}
+.accordion-item {
 	padding: 0;
 	transition: padding 0.4s;
 	border-radius: 0.7rem;
@@ -231,7 +254,7 @@
 	transition: transform 0.4s;
 }
 
-.questions_title {
+.accordion-button collapsed {
 	cursor: pointer;
 	font-size: 1.3rem;
 	display: flex;
