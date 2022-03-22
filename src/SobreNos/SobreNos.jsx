@@ -9,7 +9,7 @@ import rodrigo from '../assets/rodrigo (1).png';
 import update from '../assets/update.svg';
 import coletando from '../assets/coletando.svg';
 
-export default () => {
+export default function SobreNos() {
 	return (
 		<section class='heroRights__container'>
 			<div class='container heroRights__content'>
@@ -76,7 +76,11 @@ export default () => {
 				<div class='container-xl'>
 					<div class='equipe__content'>
 						<div class='equipe__card'>
-							<img src={abimael} class='equipe__card-img' />
+							<img
+								src={abimael}
+								class='equipe__card-img'
+								alt='abimael lovera'
+							/>
 							<h4 class='equipe__card-title'>Abimael Lovera</h4>
 							<p class='equipe__card-txt'>Developer FullStack</p>
 							<div class='equipe__card-links'>
@@ -108,7 +112,11 @@ export default () => {
 						</div>
 
 						<div class='equipe__card'>
-							<img src={fernando} class='equipe__card-img' />
+							<img
+								src={fernando}
+								class='equipe__card-img'
+								alt='fernado gaspar'
+							/>
 							<h4 class='equipe__card-title'>Fernando Gaspar</h4>
 							<p class='equipe__card-txt'>Developer FullStack</p>
 							<div class='equipe__card-links'>
@@ -140,7 +148,7 @@ export default () => {
 						</div>
 
 						<div class='equipe__card'>
-							<img src={gustavo} class='equipe__card-img' />
+							<img src={gustavo} class='equipe__card-img' alt='gustavo silva' />
 							<h4 class='equipe__card-title'>Gustavo Silva</h4>
 							<p class='equipe__card-txt'>Developer FullStack</p>
 							<div class='equipe__card-links'>
@@ -172,7 +180,7 @@ export default () => {
 						</div>
 
 						<div class='equipe__card'>
-							<img src={rodrigo} class='equipe__card-img' />
+							<img src={rodrigo} class='equipe__card-img' alt='rodrigo' />
 							<h4 class='equipe__card-title'>Rodrigo Cunha</h4>
 							<p class='equipe__card-txt'>Developer FullStack</p>
 							<div class='equipe__card-links'>
@@ -204,7 +212,7 @@ export default () => {
 						</div>
 
 						<div class='equipe__card'>
-							<img src={jonatan} class='equipe__card-img' />
+							<img src={jonatan} class='equipe__card-img' alt='jonatan' />
 							<h4 class='equipe__card-title'>Jonatan Vasconcelos</h4>
 							<p class='equipe__card-txt'>Developer FullStack</p>
 							<div class='equipe__card-links'>
@@ -236,7 +244,7 @@ export default () => {
 						</div>
 
 						<div class='equipe__card'>
-							<img src={renan} class='equipe__card-img' />
+							<img src={renan} class='equipe__card-img' alt='renan' />
 							<h4 class='equipe__card-title'>Renan dos Reis Fernandes</h4>
 							<p class='equipe__card-txt'>Developer FullStack</p>
 							<div class='equipe__card-links'>
@@ -271,4 +279,4 @@ export default () => {
 			</section>
 		</section>
 	);
-};
+}
