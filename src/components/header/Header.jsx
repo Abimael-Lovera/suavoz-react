@@ -8,11 +8,7 @@ export default function Header() {
 			<header>
 				<nav className='navbar navbar-expand-xl navbar-dark fixed-top navbar__container'>
 					<div className='container'>
-						<a
-							className='navbar-brand'
-							asp-controller='Home'
-							asp-action='Index'
-						>
+						<a className='navbar-brand'>
 							<img src={logoHeader} alt='' />
 						</a>
 						<button
@@ -30,37 +26,24 @@ export default function Header() {
 							<div className='mx-auto'></div>
 							<ul className='navbar-nav'>
 								<li className='nav-item'>
-									<a
-										className='nav-link'
-										asp-controller='Home'
-										asp-action='Index'
-									>
+									<a className='nav-link'>
 										{' '}
 										<i className=' fa-solid fa-house'></i> Home{' '}
 									</a>
 								</li>
 								<li className='nav-item'>
-									<a
-										className='nav-link'
-										asp-controller='Home'
-										asp-action='About'
-									>
+									<a className='nav-link'>
 										{' '}
 										<i className='fa-solid fa-briefcase'></i> Sobre nós{' '}
 									</a>
 								</li>
 								<li className='nav-item'>
-									<a
-										className='nav-link'
-										asp-controller='Home'
-										asp-action='Rights'
-									>
+									<a className='nav-link'>
 										{' '}
 										<i className='fa-solid fa-book-open-reader'></i> Seus
 										Direitos{' '}
 									</a>
 								</li>
-								<partial name='_LoginPartial.html' />
 							</ul>
 						</div>
 					</div>
