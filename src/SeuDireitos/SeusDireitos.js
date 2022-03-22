@@ -395,7 +395,7 @@ export default () => {
 													<h6 className='accordion-title'>
 													O que fazer se o Policial desrespeitar seus direitos
 													ou, de alguma forma, você se sentir prejudicado em
-													função da atuação da Polícia?
+													função da atuação da Polícia ?
 													</h6>
 													
 												</button>
