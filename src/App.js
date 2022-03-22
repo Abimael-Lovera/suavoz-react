@@ -1,7 +1,8 @@
 function App() {
 	return (
 		<div>
-			<h1>Limpando Projeto</h1>
+			<h1>Limpando projeto</h1>
+			<h2>para refatorar</h2>
 		</div>
 	);
 }
