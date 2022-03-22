@@ -50,14 +50,7 @@ export default function Hero() {
 										</p>
 									</blockquote>
 									<button class='carousel--button'>
-										<a
-											class='btn hover__cta'
-											asp-controller='Denuncia'
-											asp-action='Index'
-											asp-area='Identity'
-										>
-											Faça a sua denúncia !
-										</a>
+										<a class='btn hover__cta'>Faça a sua denúncia !</a>
 									</button>
 								</div>
 							</div>
@@ -72,14 +65,7 @@ export default function Hero() {
 								<div class='carousel-caption'>
 									<h2>Sua voz, nosso grito !</h2>
 									<button class='carousel--button'>
-										<a
-											class='btn hover__cta'
-											asp-controller='Denuncia'
-											asp-action='Index'
-											asp-area='Identity'
-										>
-											Faça a sua denúncia !
-										</a>
+										<a class='btn hover__cta'>Faça a sua denúncia !</a>
 									</button>
 								</div>
 							</div>
@@ -98,14 +84,7 @@ export default function Hero() {
 										Lutamos para ser Sua Voz
 									</h2>
 									<button class='carousel--button'>
-										<a
-											class='btn hover__cta'
-											asp-controller='Denuncia'
-											asp-action='Index'
-											asp-area='Identity'
-										>
-											Faça a sua denúncia !
-										</a>
+										<a class='btn hover__cta'>Faça a sua denúncia !</a>
 									</button>
 								</div>
 							</div>
