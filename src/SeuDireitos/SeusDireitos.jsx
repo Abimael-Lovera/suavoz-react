@@ -7,7 +7,7 @@ import saude from '../assets/Saúde.png';
 import racismo from '../assets/racismo.png';
 import mulher from '../assets/mulher.png';
 
-export default () => {
+export default function SeusDireitos() {
 	return (
 		<section class='direitos'>
 			<div class='direitosHero'>
@@ -1078,4 +1078,4 @@ export default () => {
 			</section>
 		</section>
 	);
-};
+}
