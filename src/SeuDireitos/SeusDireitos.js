@@ -240,20 +240,21 @@ export default () => {
 									</p>
 									<div class='questions_container'>
 										<div class='accordion-item'>
-											<h2 class='accordion-header' id='flush-headingThree'>
-												<button
+											<h2 class='accordion-header' id='flush-headingthree'>
+												<button 
 													class='accordion-button collapsed'
 													type='button'
 													data-bs-toggle='collapse'
-													data-bs-target='#flush-collapseThree'
+													data-bs-target='#flush-collapseum'
 													aria-expanded='false'
 													aria-controls='flush-collapseThree'
-												>
-													O que é uma Abordagem Policial?
+												>	<h6 className='accordion-title'>
+													O que é uma Abordagem Policial ?
+													</h6>
 												</button>
 											</h2>
 											<div
-												id='flush-collapseThree'
+												id='flush-collapseum'
 												class='accordion-collapse collapse'
 												aria-labelledby='flush-headingThree'
 												data-bs-parent='#accordionFlushExample'
@@ -284,8 +285,12 @@ export default () => {
 														data-bs-target='#flush-collapseOne'
 														aria-expanded='false'
 														aria-controls='flush-collapseOne'
-													>
-														o que fazer quando for abordado pela polícia
+													>	
+														<h6 className='accordion-title'>
+													O que fazer quando for abordado pela polícia ?
+													</h6>
+														
+														
 													</button>
 												</h2>
 												<div
@@ -329,7 +334,10 @@ export default () => {
 													aria-expanded='false'
 													aria-controls='flush-collapseTwo'
 												>
-													Quais são os direitos do cidadão abordado
+													<h6 className='accordion-title'>
+													Quais são os direitos do cidadão abordado ?
+													</h6>
+													
 												</button>
 											</h2>
 											<div
@@ -383,9 +391,13 @@ export default () => {
 													aria-expanded='false'
 													aria-controls='flush-collapseThree'
 												>
+
+													<h6 className='accordion-title'>
 													O que fazer se o Policial desrespeitar seus direitos
 													ou, de alguma forma, você se sentir prejudicado em
-													função da atuação da Polícia?
+													função da atuação da Polícia ?
+													</h6>
+													
 												</button>
 											</h2>
 											<div
@@ -473,7 +485,12 @@ export default () => {
 													aria-expanded='false'
 													aria-controls='flush-collapseThree'
 												>
-													Na Universidade
+
+													<h6 className='accordion-title'>
+													Na universidade.
+													</h6>
+
+													
 												</button>
 											</h2>
 											<div
@@ -503,21 +520,23 @@ export default () => {
 
 										<div className='accordion-sistema'>
 											<div class='accordion-item'>
-												<h2 class='accordion-header' id='flush-headingTwo'>
+												<h2 class='accordion-header' id='flush-headingOne'>
 													<button
 														class='accordion-button collapsed'
 														type='button'
 														data-bs-toggle='collapse'
-														data-bs-target='#flush-collapseTwo'
+														data-bs-target='#flush-collapseOne'
 														aria-expanded='false'
 														aria-controls='flush-collapseTwo'
 													>
-														Como entrar na faculdade por meio do sistema de
-														cotas?
+													
+													<h6 className='accordion-title'>
+													Como entrar na faculdade por meio do sistema de cotas ?
+													</h6>
 													</button>
 												</h2>
 												<div
-													id='flush-collapseTwo'
+													id='flush-collapseOne'
 													class='accordion-collapse collapse'
 													aria-labelledby='flush-headingTwo'
 													data-bs-parent='#accordionFlushExample'
@@ -576,15 +595,17 @@ export default () => {
 															data-bs-toggle='collapse'
 															data-bs-target='#flush-collapseTwo'
 															aria-expanded='false'
-															aria-controls='flush-collapseTwo'
+															aria-controls='flush-collapseFour'
 														>
-															No concurso público
+															<h6 className='accordion-title'>
+																No concurso público.
+													</h6>
 														</button>
 													</h2>
 													<div
 														id='flush-collapseTwo'
 														class='accordion-collapse collapse'
-														aria-labelledby='flush-headingTwo'
+														aria-labelledby='flush-headingSix'
 														data-bs-parent='#accordionFlushExample'
 													>
 														<div class='accordion-body'>
@@ -719,20 +740,23 @@ export default () => {
 
 									<section class='questions_container'>
 										<div class='accordion-item'>
-											<h2 class='accordion-header' id='flush-headingThree'>
+											<h2 class='accordion-header' id='flush-headingtres'>
 												<button
 													class='accordion-button collapsed'
 													type='button'
 													data-bs-toggle='collapse'
-													data-bs-target='#flush-collapseThree'
+													data-bs-target='#flush-collapsetres'
 													aria-expanded='false'
 													aria-controls='flush-collapseThree'
 												>
-													Anemia falciforme
+													<h6 className='accordion-title'>
+													Anemia falciforme.
+													</h6>
+													
 												</button>
 											</h2>
 											<div
-												id='flush-collapseThree'
+												id='flush-collapsetres'
 												class='accordion-collapse collapse'
 												aria-labelledby='flush-headingThree'
 												data-bs-parent='#accordionFlushExample'
@@ -750,46 +774,51 @@ export default () => {
 											</div>
 										</div>
 
-										<article class='questions_padding'>
-											<div class='questions_answer'>
-												<h4 class='questions_title'>
-													Diabetes mellitus (tipo II)
-													<span class='questions_arrow'>
-														<img
-															src='~/img/arrow.svg'
-															alt=''
-															class='questions_img'
-														/>
-													</span>
-												</h4>
-
-												<p class='questions_show'>
-													Esse tipo de diabetes se desenvolve na fase adulta e
+										<div class="accordion-item">
+    									<h2 class="accordion-header" id="flush-headingquatro">
+      								<button class="accordion-button collapsed" 
+									  type="button" data-bs-toggle="collapse" 
+									  data-bs-target="#flush-collapsequatro"
+									   aria-expanded="false" 
+									   aria-controls="flush-collapseThree">
+      
+									  <h6 className='accordion-title'>
+													Diabetes mellitus (tipo) II
+													</h6>
+	  
+     </button>
+    </h2>
+    <div id="flush-collapsequatro" 
+	class="accordion-collapse collapse" 
+	aria-labelledby="flush-headingThree" 
+	data-bs-parent="#accordionFlushExample">
+    <div class="accordion-body"><code></code> 
+      Esse tipo de diabetes se desenvolve na fase adulta e
 													evolui causando danos em todo o organismo. É a quarta
 													causa de morte e a principal causa de cegueira
 													adquirida no Brasil. Essa doença atinge com mais
 													frequência os homens negros (9% a mais que os homens
 													brancos) e as mulheres negras (em torno de 50% a mais
 													do que as mulheres brancas).
-												</p>
-											</div>
-										</article>
+  </div>
+  </div>
+  </div>
 
-										<article class='questions_padding'>
-											<div class='questions_answer'>
-												<h4 class='questions_title' className='text-left'>
-													Hipertensão arterial
-													<span class='questions_arrow'>
-														<img
-															src='~/img/arrow.svg'
-															alt=''
-															class='questions_img'
-														/>
-													</span>
-												</h4>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+     
+	  <h6 className='accordion-title'>
+													Hipertensão arterial.
+													</h6>
+	 
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">                            
+         <code></code>
 
-												<p class='questions_show'>
-													A doença, que atinge 10% a 20% dos adultos, é a causa
+         A doença, que atinge 10% a 20% dos adultos, é a causa
 													direta ou indireta de 12% a 14% de todos os óbitos no
 													Brasil. Em geral, a hipertensão é mais alta entre os
 													homens e tende ser mais complicada em negros, de ambos
@@ -802,27 +831,30 @@ export default () => {
 													vermelhos, levando à anemia hemolítica e, por ser um
 													distúrbio genético ligado ao cromossomo X, é mais
 													frequente nos meninos.
-												</p>
-											</div>
-										</article>
 
-										<article class='questions_padding'>
-											<div class='questions_answer'>
-												<h4 class='questions_title' className='text-left'>
-													Além da criação da própria PNSIPN, é possível
+         </div>
+    </div>
+  </div>
+											
+
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+      												
+	  <h6 className='accordion-title'>
+	  Além da criação da própria PNSIPN, é possível
 													identificar outros avanços nas ações voltadas à saúde
 													da população negra, com destaque para:
-													<span class='questions_arrow'>
-														<img
-															src='~/img/arrow.svg'
-															alt=''
-															class='questions_img'
-														/>
-													</span>
-												</h4>
+													</h6>
 
-												<div class='questions_show'>
-													<ul>
+													  
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><code></code>
+
+      <ul>
 														<li>
 															Plano Juventude Viva – Prevê ações de prevenção
 															para reduzir a vulnerabilidade de jovens negros a
@@ -886,9 +918,14 @@ export default () => {
 															prioridades aplicáveis à realidade local.
 														</li>
 													</ul>
-												</div>
-											</div>
-										</article>
+
+
+        </div>
+    </div>
+  </div>
+  </div>
+
+
 									</section>
 								</section>
 							</div>
@@ -916,20 +953,32 @@ export default () => {
 									<h3 class='subtitle'></h3>
 
 									<section class='questions_container'>
-										<article class='questions_padding'>
-											<div class='questions_answer'>
-												<h4 class='questions_title'>
-													Injúria Racial e Racismo
-													<span class='questions_arrow'>
-														<img
-															src='~/img/arrow.svg'
-															alt=''
-															class='questions_img'
-														/>
-													</span>
-												</h4>
-												<div class='questions_show'>
-													<p class='questions_paragraph'>
+										
+										
+									<div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed"
+	   type="button" 
+	   data-bs-toggle="collapse" 
+	   data-bs-target="#flush-collapseTwo" 
+	   aria-expanded="false" 
+	   aria-controls="flush-collapseTwo">
+      												<h6 className='accordion-title'>
+													Injúria Racial e Racismo.
+													</h6>
+	  
+	  
+	  
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" 
+	class="accordion-collapse collapse" 
+	aria-labelledby="flush-headingTwo" 
+	data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">                            
+         <code></code>
+
+         <p class='questions_paragraph'>
 														O crime de injuria racial está previsto no Código
 														Penal brasileiro e consiste em ofender a honra de
 														alguém valendo-se de elementos referentes à raça,
@@ -978,7 +1027,7 @@ export default () => {
 													</ol>
 													<p class='questions_paragraph'>
 														Já o crime de racismo está previsto na previsto na
-														Lei 7.716/1989, e ocorre quando o agressor atinge um
+														Lei 7.716/1989, e ocorre quando o agressor atinge um
 														grupo ou coletivo de pessoas, discriminando uma
 														etnia de forma geral.
 													</p>
@@ -994,30 +1043,39 @@ export default () => {
 														dificultar emprego em empresa privada, entre outros.
 													</p>
 													<p class='questions_paragraph'>
-														Ao contrário da injúria racial, cuja prescrição é de
-														oito anos, o crime de racismo é, além de
+														Ao contrário da injúria racial, cuja prescrição é de
+														oito anos, o crime de racismo é, além de
 														inafiançável, imprescritível, conforme determina o
-														artigo 5º da Constituição Federal. 
+														artigo 5º da Constituição Federal.
 													</p>
-												</div>
-											</div>
-										</article>
+												
 
-										<article class='questions_padding'>
-											<div class='questions_answer'>
-												<h4 class='questions_title'>
+         </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" 
+	  type="button" data-bs-toggle="collapse" 
+	  data-bs-target="#flush-collapseThree" 
+	  aria-expanded="false" 
+	  aria-controls="flush-collapseThree">
+      
+	  												<h6 className='accordion-title'>
 													Discriminação
-													<span class='questions_arrow'>
-														<img
-															src='~/img/arrow.svg'
-															alt=''
-															class='questions_img'
-														/>
-													</span>
-												</h4>
-
-												<div class='questions_show'>
-													<p class='questions_paragraph'>
+													</h6>
+	  
+	  
+     </button>
+    </h2>
+    <div id="flush-collapseThree" 
+	class="accordion-collapse collapse" 
+	aria-labelledby="flush-headingThree" 
+	data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><code></code> 
+      
+      <p class='questions_paragraph'>
 														Por este termo tem-se a ideia de restrição,
 														diferenciação, distinção, apenas se tornando
 														aparente caso a conduta seja exteriorizada. Uma
@@ -1043,9 +1101,12 @@ export default () => {
 														diferença pessoas a partir das diferenciações
 														elencadas acima, gerando segregação.
 													</p>
-												</div>
-											</div>
-										</article>
+												
+
+  </div>
+  </div>
+  </div>
+										
 									</section>
 								</section>
 							</div>
