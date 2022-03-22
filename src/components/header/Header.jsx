@@ -1,6 +1,8 @@
-import React from 'react';
-import logoHeader from '../../assets/logoSuaVozHeader.png';
-import '../../components/Layout.css';
+
+import React from "react";
+import logoHeader from "../../assets/logoSuaVozHeader.png";
+import "../../components/Layout.css";
+
 
 export default function Header() {
 	return (

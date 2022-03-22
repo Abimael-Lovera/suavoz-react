@@ -1,7 +1,7 @@
-import Djamila from '../../../assets/Djamila-Ribeiro.jpg';
-import Silvio from '../../../assets/silvioalmeida.jpg';
-import Sueli from '../../../assets/sueli-carneiro.jpg';
-import '../Homepage.css';
+import Djamila from "../../../assets/Djamila-Ribeiro.jpg";
+import Silvio from "../../../assets/silvioalmeida.jpg";
+import Sueli from "../../../assets/sueli-carneiro.jpg";
+import "../Homepage.css";
 
 export default function Eventos() {
 	return (
