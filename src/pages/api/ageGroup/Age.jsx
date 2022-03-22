@@ -24,29 +24,31 @@ export default function Age() {
 	}
 
 	return (
-		<div className='container Age'>
-			<h1 className={styles.titulo}>Faixa Etaria</h1>
-			<section className={styles.cards}>
-				{age.map(res => (
-					<article className={styles.card} key={res.id}>
-						<span>Id: {res.id}</span>
-						<span>Idade:{res.ages}</span>
-						<Link
-							className={styles.btn_editar}
-							to={{ pathname: `/api/age/edit/${res.id}` }}
-						>
-							Editar
-						</Link>
+		<div className={styles.Age}>
+			<div className='container '>
+				<h1 className={styles.titulo}>Faixa Etaria</h1>
+				<section className={styles.cards}>
+					{age.map(res => (
+						<article className={styles.card} key={res.id}>
+							<span>Id: {res.id}</span>
+							<span>Idade:{res.ages}</span>
+							<Link
+								className={styles.btn_editar}
+								to={{ pathname: `/api/age/edit/${res.id}` }}
+							>
+								Editar
+							</Link>
 
-						<button
-							className={styles.btn_excluir}
-							onClick={() => deleteAge(res.id)}
-						>
-							Excluir
-						</button>
-					</article>
-				))}
-			</section>
+							<button
+								className={styles.btn_excluir}
+								onClick={() => deleteAge(res.id)}
+							>
+								Excluir
+							</button>
+						</article>
+					))}
+				</section>
+			</div>
 		</div>
 	);
 }

@@ -33,7 +33,7 @@ export default function AgeEdit() {
 
 	const addAge = dados => {
 		console.log(dados);
-		Api.put("/ageGroup", dados)
+		Api.put(`/ageGroup/${id}`, dados)
 			.then(() => {
 				console.log("Deu Tudo Certo");
 				navigate("/api/age");
@@ -44,7 +44,7 @@ export default function AgeEdit() {
 	};
 
 	return (
-		<>
+		<div className={styles.postContainer}>
 			<div className={styles.post}>
 				<div className={styles.container}>
 					<header className={styles.titulo}>
@@ -69,6 +69,6 @@ export default function AgeEdit() {
 					</form>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 }

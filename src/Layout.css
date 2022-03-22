@@ -67,7 +67,9 @@ button#logout:hover {
 	border: 2px solid var(--color-preto);
 	outline: none;
 }
-
+footer {
+	flex-shrink: 0;
+}
 .footer__container {
 	background: var(--color-preto);
 }

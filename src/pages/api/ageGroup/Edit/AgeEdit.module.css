@@ -3,6 +3,9 @@
 	--color-beige: #fbf2c0;
 	--color-skin: #bf8069;
 }
+.postContainer {
+	height: 90vh;
+}
 .post {
 	display: flex;
 	flex: 1;
@@ -10,6 +13,7 @@
 	align-items: center;
 	height: 90vh;
 	font-family: "Poppins", sans-serif;
+	background: var(--color-skin);
 }
 .container {
 	max-width: 500px;
@@ -73,6 +77,9 @@
 .error {
 	color: #dc3545;
 	font-size: 1rem;
+}
+footer {
+	flex-shrink: 0;
 }
 
 @media (max-width: 500px) {

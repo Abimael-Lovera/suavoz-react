@@ -10,6 +10,7 @@
 	align-items: center;
 	height: 90vh;
 	font-family: "Poppins", sans-serif;
+	background: var(--color-skin);
 }
 .container {
 	max-width: 500px;
