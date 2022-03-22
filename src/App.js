@@ -1,9 +1,9 @@
-import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import SeusDireitos from './pages/SeuDireitos/SeusDireitos';
-import SobreNos from './pages/SobreNos/SobreNos';
-import Homepage from './pages/homepage/Homepage';
-import Navbar from './components/NavBar/Navbar';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import SeusDireitos from "./pages/SeuDireitos/SeusDireitos";
+import SobreNos from "./pages/SobreNos/SobreNos";
+import Homepage from "./pages/homepage/Homepage";
+import Navbar from "./components/NavBar/Navbar";
 
 function App() {
 	return (
