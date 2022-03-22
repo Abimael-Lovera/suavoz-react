@@ -1,11 +1,11 @@
-import React from 'react';
-import './SeusDireitos.css';
-import abordagem from '../../assets/abordagem policial.jpg';
-import igualdade from '../../assets/leidaigualdaderacial.jpg';
-import cotas from '../../assets/cotasraciais.jpg';
-import saude from '../../assets/Saúde.png';
-import racismo from '../../assets/racismo.png';
-import mulher from '../../assets/mulher.png';
+import React from "react";
+import "./SeusDireitos.css";
+import abordagem from "../../assets/abordagem policial.jpg";
+import igualdade from "../../assets/leidaigualdaderacial.jpg";
+import cotas from "../../assets/cotasraciais.jpg";
+import saude from "../../assets/Saúde.png";
+import racismo from "../../assets/racismo.png";
+import mulher from "../../assets/mulher.png";
 
 export default function SeusDireitos() {
 	return (
@@ -14,7 +14,7 @@ export default function SeusDireitos() {
 				<div class='container direitosHero__content'>
 					<h1 class='direitosHero__content align-text'>
 						Conheça <br />
-						seus Direitos
+						seus <br /> Direitos
 					</h1>
 					<img src={mulher} alt='' class='direitosHero__content-img' />
 				</div>
@@ -51,7 +51,7 @@ export default function SeusDireitos() {
 								</h4>
 								<button class='card-btn'>
 									<a
-										href='#.'
+										href='#'
 										class='direitosBodys_card-btn'
 										data-bs-toggle='modal'
 										data-bs-target='#modal1'
@@ -74,7 +74,7 @@ export default function SeusDireitos() {
 								<h4 class='direitosBodys_card-title'>Abordagens Policiais</h4>
 								<button class='card-btn'>
 									<a
-										href='#.'
+										href='#'
 										class='direitosBodys_card-btn'
 										data-bs-toggle='modal'
 										data-bs-target='#modal2'
@@ -97,7 +97,7 @@ export default function SeusDireitos() {
 								<h4 class='direitosBodys_card-title'>Cotas Raciais</h4>
 								<button class='card-btn'>
 									<a
-										href='#.'
+										href='#'
 										class='direitosBodys_card-btn'
 										data-bs-toggle='modal'
 										data-bs-target='#modal3'
@@ -122,7 +122,7 @@ export default function SeusDireitos() {
 								</h4>
 								<button class='card-btn'>
 									<a
-										href='#.'
+										href='#'
 										class='direitosBodys_card-btn'
 										data-bs-toggle='modal'
 										data-bs-target='#modal4'
@@ -148,7 +148,7 @@ export default function SeusDireitos() {
 								</h4>
 								<button class='card-btn'>
 									<a
-										href='#.'
+										href='#'
 										class='direitosBodys_card-btn'
 										data-bs-toggle='modal'
 										data-bs-target='#modal5'
@@ -172,7 +172,7 @@ export default function SeusDireitos() {
 				>
 					<div class='modal-dialog modal-lg modal-bottom-left modal-side'>
 						<div class='modal-content'>
-							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
+							<a class='modal__close-btn' data-bs-dismiss='modal'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 							<div class='modal-body'>
@@ -207,7 +207,7 @@ export default function SeusDireitos() {
 									garantindo acesso à Justiça e à Segurança.
 								</p>
 							</div>
-							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
+							<a class='modal__close-btn' data-bs-dismiss='modal'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 						</div>
@@ -223,11 +223,7 @@ export default function SeusDireitos() {
 				>
 					<div class='modal-dialog modal-lg'>
 						<div class='modal-content'>
-							<a
-								class='text-center modal__close-btn'
-								data-bs-dismiss='modal'
-								href='#.'
-							>
+							<a class='text-center modal__close-btn' data-bs-dismiss='modal'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 							<div class='modal-body'>
@@ -244,20 +240,23 @@ export default function SeusDireitos() {
 									</p>
 									<div class='questions_container'>
 										<div class='accordion-item'>
-											<h2 class='accordion-header' id='flush-headingThree'>
+											<h2 class='accordion-header' id='flush-headingthree'>
 												<button
 													class='accordion-button collapsed'
 													type='button'
 													data-bs-toggle='collapse'
-													data-bs-target='#flush-collapseThree'
+													data-bs-target='#flush-collapseum'
 													aria-expanded='false'
 													aria-controls='flush-collapseThree'
 												>
-													O que é uma Abordagem Policial?
+													{" "}
+													<h6 className='accordion-title'>
+														O que é uma Abordagem Policial ?
+													</h6>
 												</button>
 											</h2>
 											<div
-												id='flush-collapseThree'
+												id='flush-collapseum'
 												class='accordion-collapse collapse'
 												aria-labelledby='flush-headingThree'
 												data-bs-parent='#accordionFlushExample'
@@ -270,7 +269,7 @@ export default function SeusDireitos() {
 													apreensão de pessoa ou coisa ou uma simples
 													advertência ou orientação. É uma das principais
 													atividades realizadas pelos Policiais em seu trabalho
-													diário, visando a prevenção de crimes e contravenções.{' '}
+													diário, visando a prevenção de crimes e contravenções.{" "}
 												</div>
 											</div>
 										</div>
@@ -289,7 +288,9 @@ export default function SeusDireitos() {
 														aria-expanded='false'
 														aria-controls='flush-collapseOne'
 													>
-														o que fazer quando for abordado pela polícia
+														<h6 className='accordion-title'>
+															O que fazer quando for abordado pela polícia ?
+														</h6>
 													</button>
 												</h2>
 												<div
@@ -299,7 +300,7 @@ export default function SeusDireitos() {
 													data-bs-parent='#accordionFlushExample'
 												>
 													<div class='accordion-body'>
-														{' '}
+														{" "}
 														<code></code>
 														<ul>
 															<li>
@@ -333,7 +334,9 @@ export default function SeusDireitos() {
 													aria-expanded='false'
 													aria-controls='flush-collapseTwo'
 												>
-													Quais são os direitos do cidadão abordado
+													<h6 className='accordion-title'>
+														Quais são os direitos do cidadão abordado ?
+													</h6>
 												</button>
 											</h2>
 											<div
@@ -387,9 +390,11 @@ export default function SeusDireitos() {
 													aria-expanded='false'
 													aria-controls='flush-collapseThree'
 												>
-													O que fazer se o Policial desrespeitar seus direitos
-													ou, de alguma forma, você se sentir prejudicado em
-													função da atuação da Polícia?
+													<h6 className='accordion-title'>
+														O que fazer se o Policial desrespeitar seus direitos
+														ou, de alguma forma, você se sentir prejudicado em
+														função da atuação da Polícia ?
+													</h6>
 												</button>
 											</h2>
 											<div
@@ -434,7 +439,7 @@ export default function SeusDireitos() {
 									</div>
 								</section>
 							</div>
-							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
+							<a class='modal__close-btn' data-bs-dismiss='modal'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 						</div>
@@ -450,7 +455,7 @@ export default function SeusDireitos() {
 				>
 					<div class='modal-dialog modal-lg'>
 						<div class='modal-content'>
-							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
+							<a class='modal__close-btn' data-bs-dismiss='modal'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 							<div class='modal-body'>
@@ -477,7 +482,7 @@ export default function SeusDireitos() {
 													aria-expanded='false'
 													aria-controls='flush-collapseThree'
 												>
-													Na Universidade
+													<h6 className='accordion-title'>Na universidade.</h6>
 												</button>
 											</h2>
 											<div
@@ -507,21 +512,23 @@ export default function SeusDireitos() {
 
 										<div className='accordion-sistema'>
 											<div class='accordion-item'>
-												<h2 class='accordion-header' id='flush-headingTwo'>
+												<h2 class='accordion-header' id='flush-headingOne'>
 													<button
 														class='accordion-button collapsed'
 														type='button'
 														data-bs-toggle='collapse'
-														data-bs-target='#flush-collapseTwo'
+														data-bs-target='#flush-collapseOne'
 														aria-expanded='false'
 														aria-controls='flush-collapseTwo'
 													>
-														Como entrar na faculdade por meio do sistema de
-														cotas?
+														<h6 className='accordion-title'>
+															Como entrar na faculdade por meio do sistema de
+															cotas ?
+														</h6>
 													</button>
 												</h2>
 												<div
-													id='flush-collapseTwo'
+													id='flush-collapseOne'
 													class='accordion-collapse collapse'
 													aria-labelledby='flush-headingTwo'
 													data-bs-parent='#accordionFlushExample'
@@ -580,15 +587,17 @@ export default function SeusDireitos() {
 															data-bs-toggle='collapse'
 															data-bs-target='#flush-collapseTwo'
 															aria-expanded='false'
-															aria-controls='flush-collapseTwo'
+															aria-controls='flush-collapseFour'
 														>
-															No concurso público
+															<h6 className='accordion-title'>
+																No concurso público.
+															</h6>
 														</button>
 													</h2>
 													<div
 														id='flush-collapseTwo'
 														class='accordion-collapse collapse'
-														aria-labelledby='flush-headingTwo'
+														aria-labelledby='flush-headingSix'
 														data-bs-parent='#accordionFlushExample'
 													>
 														<div class='accordion-body'>
@@ -629,7 +638,7 @@ export default function SeusDireitos() {
 																podemos comprovar que, de fato, elas foram um
 																passo inicial para a democratização do acesso ao
 																ensino superior no Brasil.
-															</p>{' '}
+															</p>{" "}
 															<code></code>
 														</div>
 													</div>
@@ -640,7 +649,7 @@ export default function SeusDireitos() {
 								</section>
 							</div>
 
-							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
+							<a class='modal__close-btn' data-bs-dismiss='modal'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 						</div>
@@ -656,7 +665,7 @@ export default function SeusDireitos() {
 				>
 					<div class='modal-dialog modal-lg modal-bottom-left modal-side'>
 						<div class='modal-content'>
-							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
+							<a class='modal__close-btn' data-bs-dismiss='modal'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 							<div class='modal-body'>
@@ -723,20 +732,22 @@ export default function SeusDireitos() {
 
 									<section class='questions_container'>
 										<div class='accordion-item'>
-											<h2 class='accordion-header' id='flush-headingThree'>
+											<h2 class='accordion-header' id='flush-headingtres'>
 												<button
 													class='accordion-button collapsed'
 													type='button'
 													data-bs-toggle='collapse'
-													data-bs-target='#flush-collapseThree'
+													data-bs-target='#flush-collapsetres'
 													aria-expanded='false'
 													aria-controls='flush-collapseThree'
 												>
-													Anemia falciforme
+													<h6 className='accordion-title'>
+														Anemia falciforme.
+													</h6>
 												</button>
 											</h2>
 											<div
-												id='flush-collapseThree'
+												id='flush-collapsetres'
 												class='accordion-collapse collapse'
 												aria-labelledby='flush-headingThree'
 												data-bs-parent='#accordionFlushExample'
@@ -754,20 +765,29 @@ export default function SeusDireitos() {
 											</div>
 										</div>
 
-										<article class='questions_padding'>
-											<div class='questions_answer'>
-												<h4 class='questions_title'>
-													Diabetes mellitus (tipo II)
-													<span class='questions_arrow'>
-														<img
-															src='~/img/arrow.svg'
-															alt=''
-															class='questions_img'
-														/>
-													</span>
-												</h4>
-
-												<p class='questions_show'>
+										<div class='accordion-item'>
+											<h2 class='accordion-header' id='flush-headingquatro'>
+												<button
+													class='accordion-button collapsed'
+													type='button'
+													data-bs-toggle='collapse'
+													data-bs-target='#flush-collapsequatro'
+													aria-expanded='false'
+													aria-controls='flush-collapseThree'
+												>
+													<h6 className='accordion-title'>
+														Diabetes mellitus (tipo) II
+													</h6>
+												</button>
+											</h2>
+											<div
+												id='flush-collapsequatro'
+												class='accordion-collapse collapse'
+												aria-labelledby='flush-headingThree'
+												data-bs-parent='#accordionFlushExample'
+											>
+												<div class='accordion-body'>
+													<code></code>
 													Esse tipo de diabetes se desenvolve na fase adulta e
 													evolui causando danos em todo o organismo. É a quarta
 													causa de morte e a principal causa de cegueira
@@ -775,128 +795,154 @@ export default function SeusDireitos() {
 													frequência os homens negros (9% a mais que os homens
 													brancos) e as mulheres negras (em torno de 50% a mais
 													do que as mulheres brancas).
-												</p>
-											</div>
-										</article>
-
-										<article class='questions_padding'>
-											<div class='questions_answer'>
-												<h4 class='questions_title' className='text-left'>
-													Hipertensão arterial
-													<span class='questions_arrow'>
-														<img
-															src='~/img/arrow.svg'
-															alt=''
-															class='questions_img'
-														/>
-													</span>
-												</h4>
-
-												<p class='questions_show'>
-													A doença, que atinge 10% a 20% dos adultos, é a causa
-													direta ou indireta de 12% a 14% de todos os óbitos no
-													Brasil. Em geral, a hipertensão é mais alta entre os
-													homens e tende ser mais complicada em negros, de ambos
-													os sexos. Deficiência de glicose-6-fosfato
-													desidrogenase — Afeta mais de 200 milhões de pessoas
-													no mundo. Apresenta frequência relativamente alta em
-													negros americanos (13%) e populações do Mediterrâneo,
-													como na Itália e no Oriente Médio (5% a 40%). A falta
-													dessa enzima resulta na destruição dos glóbulos
-													vermelhos, levando à anemia hemolítica e, por ser um
-													distúrbio genético ligado ao cromossomo X, é mais
-													frequente nos meninos.
-												</p>
-											</div>
-										</article>
-
-										<article class='questions_padding'>
-											<div class='questions_answer'>
-												<h4 class='questions_title' className='text-left'>
-													Além da criação da própria PNSIPN, é possível
-													identificar outros avanços nas ações voltadas à saúde
-													da população negra, com destaque para:
-													<span class='questions_arrow'>
-														<img
-															src='~/img/arrow.svg'
-															alt=''
-															class='questions_img'
-														/>
-													</span>
-												</h4>
-
-												<div class='questions_show'>
-													<ul>
-														<li>
-															Plano Juventude Viva – Prevê ações de prevenção
-															para reduzir a vulnerabilidade de jovens negros a
-															situações de violência física e simbólica.
-														</li>
-														<li>
-															Portaria nº 1.391, de 16 de agosto de 2005, que
-															institui, no âmbito do SUS, as diretrizes para a
-															Política Nacional de Atenção Integral às Pessoas
-															com Doença Falciforme e outras Hemoglobinopatias.
-														</li>
-														<li>
-															Incorporação do transplante de medula para
-															tratamento da doença falciforme no âmbito do SUS
-															(Portaria SCTIE n° 30, de 30 de junho de 2015).
-														</li>
-														<li>
-															Curso de ensino a distância sobre saúde da
-															população negra promovido pelo MS e Universidade
-															Aberta do SUS (UNA-SUS), lançada em 27 de outubro
-															de 2014).
-														</li>
-														<li>
-															Comitê Técnico de Saúde da População Negra –
-															Instituído no âmbito do Ministério da Saúde, é um
-															espaço consultivo de participação e controle
-															social, com representantes da gestão,
-															pesquisadores e movimentos negros.
-														</li>
-														<li>
-															Publicação da Portaria nº 344, de 1º de fevereiro
-															de 2017, que padroniza e torna obrigatória a
-															coleta e o preenchimento do quesito raça/cor do
-															paciente em todos os sistemas de informação do
-															SUS, conforme a classificação do IBGE, que define
-															cinco categorias autodeclaradas: branca, preta,
-															amarela, parda e indígena.
-														</li>
-														<li>
-															Publicação, em 30 de março de 2017, do III Plano
-															Operativo da 25 Política Nacional de Saúde
-															Integral da População Negra (Resolução nº 16, de
-															30 de março de 2017). O III Plano Operativo foi
-															pactuado e aprovado na Comissão Inter gestores
-															Tripartite (CIT) – foro permanente de negociação e
-															articulação das esferas de gestão do Sistema Único
-															de Saúde (SUS). Com vigência para o triênio 2017-
-															2019, o III Plano Operativo estabelece ações de
-															implementação da referida política para as gestões
-															federal, estadual e municipal do SUS. h)
-															Publicação da Portaria nº 142, de 21 de julho de
-															2017, que institui o Grupo de Trabalho de
-															Políticas Públicas da Igualdade Racial e dá outras
-															providências. Conforme o art. 1°, fica instituído
-															o Grupo de Trabalho de Políticas Públicas da
-															Igualdade Racial com a finalidade de explanar aos
-															órgãos e às entidades governamentais e não
-															governamentais dos estados e municípios as ações
-															de promoção da igualdade racial das políticas
-															públicas federais, assim como de propor metas e
-															prioridades aplicáveis à realidade local.
-														</li>
-													</ul>
 												</div>
 											</div>
-										</article>
+										</div>
+
+										<div class='accordion-item'>
+											<h2 class='accordion-header' id='flush-headingTwo'>
+												<button
+													class='accordion-button collapsed'
+													type='button'
+													data-bs-toggle='collapse'
+													data-bs-target='#flush-collapseTwo'
+													aria-expanded='false'
+													aria-controls='flush-collapseTwo'
+												>
+													<h6 className='accordion-title'>
+														Hipertensão arterial.
+													</h6>
+												</button>
+											</h2>
+											<div
+												id='flush-collapseTwo'
+												class='accordion-collapse collapse'
+												aria-labelledby='flush-headingTwo'
+												data-bs-parent='#accordionFlushExample'
+											>
+												<div class='accordion-body'>
+													<code></code>A doença, que atinge 10% a 20% dos
+													adultos, é a causa direta ou indireta de 12% a 14% de
+													todos os óbitos no Brasil. Em geral, a hipertensão é
+													mais alta entre os homens e tende ser mais complicada
+													em negros, de ambos os sexos. Deficiência de
+													glicose-6-fosfato desidrogenase — Afeta mais de 200
+													milhões de pessoas no mundo. Apresenta frequência
+													relativamente alta em negros americanos (13%) e
+													populações do Mediterrâneo, como na Itália e no
+													Oriente Médio (5% a 40%). A falta dessa enzima resulta
+													na destruição dos glóbulos vermelhos, levando à anemia
+													hemolítica e, por ser um distúrbio genético ligado ao
+													cromossomo X, é mais frequente nos meninos.
+												</div>
+											</div>
+										</div>
+
+										<div
+											class='accordion accordion-flush'
+											id='accordionFlushExample'
+										>
+											<div class='accordion-item'>
+												<h2 class='accordion-header' id='flush-headingOne'>
+													<button
+														class='accordion-button collapsed'
+														type='button'
+														data-bs-toggle='collapse'
+														data-bs-target='#flush-collapseOne'
+														aria-expanded='false'
+														aria-controls='flush-collapseOne'
+													>
+														<h6 className='accordion-title'>
+															Além da criação da própria PNSIPN, é possível
+															identificar outros avanços nas ações voltadas à
+															saúde da população negra, com destaque para:
+														</h6>
+													</button>
+												</h2>
+												<div
+													id='flush-collapseOne'
+													class='accordion-collapse collapse'
+													aria-labelledby='flush-headingOne'
+													data-bs-parent='#accordionFlushExample'
+												>
+													<div class='accordion-body'>
+														<code></code>
+
+														<ul>
+															<li>
+																Plano Juventude Viva – Prevê ações de prevenção
+																para reduzir a vulnerabilidade de jovens negros
+																a situações de violência física e simbólica.
+															</li>
+															<li>
+																Portaria nº 1.391, de 16 de agosto de 2005, que
+																institui, no âmbito do SUS, as diretrizes para a
+																Política Nacional de Atenção Integral às Pessoas
+																com Doença Falciforme e outras
+																Hemoglobinopatias.
+															</li>
+															<li>
+																Incorporação do transplante de medula para
+																tratamento da doença falciforme no âmbito do SUS
+																(Portaria SCTIE n° 30, de 30 de junho de 2015).
+															</li>
+															<li>
+																Curso de ensino a distância sobre saúde da
+																população negra promovido pelo MS e Universidade
+																Aberta do SUS (UNA-SUS), lançada em 27 de
+																outubro de 2014).
+															</li>
+															<li>
+																Comitê Técnico de Saúde da População Negra –
+																Instituído no âmbito do Ministério da Saúde, é
+																um espaço consultivo de participação e controle
+																social, com representantes da gestão,
+																pesquisadores e movimentos negros.
+															</li>
+															<li>
+																Publicação da Portaria nº 344, de 1º de
+																fevereiro de 2017, que padroniza e torna
+																obrigatória a coleta e o preenchimento do
+																quesito raça/cor do paciente em todos os
+																sistemas de informação do SUS, conforme a
+																classificação do IBGE, que define cinco
+																categorias autodeclaradas: branca, preta,
+																amarela, parda e indígena.
+															</li>
+															<li>
+																Publicação, em 30 de março de 2017, do III Plano
+																Operativo da 25 Política Nacional de Saúde
+																Integral da População Negra (Resolução nº 16, de
+																30 de março de 2017). O III Plano Operativo foi
+																pactuado e aprovado na Comissão Inter gestores
+																Tripartite (CIT) – foro permanente de negociação
+																e articulação das esferas de gestão do Sistema
+																Único de Saúde (SUS). Com vigência para o
+																triênio 2017- 2019, o III Plano Operativo
+																estabelece ações de implementação da referida
+																política para as gestões federal, estadual e
+																municipal do SUS. h) Publicação da Portaria nº
+																142, de 21 de julho de 2017, que institui o
+																Grupo de Trabalho de Políticas Públicas da
+																Igualdade Racial e dá outras providências.
+																Conforme o art. 1°, fica instituído o Grupo de
+																Trabalho de Políticas Públicas da Igualdade
+																Racial com a finalidade de explanar aos órgãos e
+																às entidades governamentais e não governamentais
+																dos estados e municípios as ações de promoção da
+																igualdade racial das políticas públicas
+																federais, assim como de propor metas e
+																prioridades aplicáveis à realidade local.
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
 									</section>
 								</section>
 							</div>
-							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
+							<a class='modal__close-btn' data-bs-dismiss='modal'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 						</div>
@@ -912,25 +958,38 @@ export default function SeusDireitos() {
 				>
 					<div class='modal-dialog modal-lg modal-dialog-centered'>
 						<div class='modal-content'>
-							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
+							<a class='modal__close-btn' data-bs-dismiss='modal'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 							<div class='modal-body'>
 								<section class='questions container'>
+									<h3 class='subtitle'></h3>
+
 									<section class='questions_container'>
-										<article class='questions_padding'>
-											<div class='questions_answer'>
-												<h4 class='questions_title'>
-													Injúria Racial e Racismo
-													<span class='questions_arrow'>
-														<img
-															src='~/img/arrow.svg'
-															alt=''
-															class='questions_img'
-														/>
-													</span>
-												</h4>
-												<div class='questions_show'>
+										<div class='accordion-item'>
+											<h2 class='accordion-header' id='flush-headingTwo'>
+												<button
+													class='accordion-button collapsed'
+													type='button'
+													data-bs-toggle='collapse'
+													data-bs-target='#flush-collapseTwo'
+													aria-expanded='false'
+													aria-controls='flush-collapseTwo'
+												>
+													<h6 className='accordion-title'>
+														Injúria Racial e Racismo.
+													</h6>
+												</button>
+											</h2>
+											<div
+												id='flush-collapseTwo'
+												class='accordion-collapse collapse'
+												aria-labelledby='flush-headingTwo'
+												data-bs-parent='#accordionFlushExample'
+											>
+												<div class='accordion-body'>
+													<code></code>
+
 													<p class='questions_paragraph'>
 														O crime de injuria racial está previsto no Código
 														Penal brasileiro e consiste em ofender a honra de
@@ -980,7 +1039,7 @@ export default function SeusDireitos() {
 													</ol>
 													<p class='questions_paragraph'>
 														Já o crime de racismo está previsto na previsto na
-														Lei 7.716/1989, e ocorre quando o agressor atinge um
+														Lei 7.716/1989, e ocorre quando o agressor atinge um
 														grupo ou coletivo de pessoas, discriminando uma
 														etnia de forma geral.
 													</p>
@@ -996,29 +1055,37 @@ export default function SeusDireitos() {
 														dificultar emprego em empresa privada, entre outros.
 													</p>
 													<p class='questions_paragraph'>
-														Ao contrário da injúria racial, cuja prescrição é de
-														oito anos, o crime de racismo é, além de
+														Ao contrário da injúria racial, cuja prescrição é de
+														oito anos, o crime de racismo é, além de
 														inafiançável, imprescritível, conforme determina o
-														artigo 5º da Constituição Federal. 
+														artigo 5º da Constituição Federal.
 													</p>
 												</div>
 											</div>
-										</article>
+										</div>
 
-										<article class='questions_padding'>
-											<div class='questions_answer'>
-												<h4 class='questions_title'>
-													Discriminação
-													<span class='questions_arrow'>
-														<img
-															src='~/img/arrow.svg'
-															alt=''
-															class='questions_img'
-														/>
-													</span>
-												</h4>
+										<div class='accordion-item'>
+											<h2 class='accordion-header' id='flush-headingThree'>
+												<button
+													class='accordion-button collapsed'
+													type='button'
+													data-bs-toggle='collapse'
+													data-bs-target='#flush-collapseThree'
+													aria-expanded='false'
+													aria-controls='flush-collapseThree'
+												>
+													<h6 className='accordion-title'>Discriminação</h6>
+												</button>
+											</h2>
+											<div
+												id='flush-collapseThree'
+												class='accordion-collapse collapse'
+												aria-labelledby='flush-headingThree'
+												data-bs-parent='#accordionFlushExample'
+											>
+												<div class='accordion-body'>
+													<code></code>
 
-												<div class='questions_show'>
 													<p class='questions_paragraph'>
 														Por este termo tem-se a ideia de restrição,
 														diferenciação, distinção, apenas se tornando
@@ -1047,11 +1114,11 @@ export default function SeusDireitos() {
 													</p>
 												</div>
 											</div>
-										</article>
+										</div>
 									</section>
 								</section>
 							</div>
-							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
+							<a class='modal__close-btn' data-bs-dismiss='modal'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 						</div>
@@ -1067,11 +1134,11 @@ export default function SeusDireitos() {
 				>
 					<div class='modal-dialog modal-lg modal-bottom-left modal-side'>
 						<div class='modal-content'>
-							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
+							<a class='modal__close-btn' data-bs-dismiss='modal'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 							<div class='modal-body'></div>
-							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
+							<a class='modal__close-btn' data-bs-dismiss='modal'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 						</div>

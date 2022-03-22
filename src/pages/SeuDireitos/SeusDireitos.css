@@ -22,7 +22,7 @@
 /* Rights */
 .direitosHero {
 	background: var(--color-maltesse);
-	/* background-image: url('../img/wave.svg'); */
+	background-image: url("../../assets/wave.svg");
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: 100% auto;
@@ -34,9 +34,11 @@
 	align-items: center;
 }
 .direitosHero__content {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	color: var(--color-bg);
 	padding: 0 1rem;
+	text-align: center;
+	display: flex;
 }
 .direitosHero__content-img {
 	width: 300px;
@@ -46,7 +48,6 @@
 	background: var(--color-bg);
 	padding: 2rem 0;
 }
-
 
 .direitos__content {
 	background: var(--color-bg);
@@ -88,7 +89,6 @@
 	overflow: hidden;
 	box-shadow: #261f1d;
 }
-
 
 .direitosBodys_card-img img {
 	width: 100%;
@@ -158,7 +158,9 @@
 	border-radius: 3rem;
 }
 
-.card-btn:hover .direitosBodys_card-btn, .card-btn:focus .direitosBodys_card-btn, .card-btn:active .direitosBodys_card-btn{
+.card-btn:hover .direitosBodys_card-btn,
+.card-btn:focus .direitosBodys_card-btn,
+.card-btn:active .direitosBodys_card-btn {
 	border-color: var(--color-bg);
 	background: var(--color-preto);
 	color: var(--color-creme);
@@ -166,7 +168,9 @@
 	border-radius: 3rem;
 }
 
-.card-btn:hover:before, .card-btn:focus:before, .card-btn:active:before {
+.card-btn:hover:before,
+.card-btn:focus:before,
+.card-btn:active:before {
 	-webkit-transform: scaleY(1);
 	transform: scaleY(1);
 	-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
@@ -179,7 +183,6 @@
 	color: var(--color-preto);
 	border-radius: 3rem;
 }
-
 
 .modal-content {
 	background-color: #bf8069;
@@ -214,7 +217,29 @@
 	padding: 2rem 0 2rem;
 }
 
-.questions_padding {
+.accordion-body {
+	text-align: left;
+}
+
+.accordion-button {
+	background-color: #262626;
+	color: #fbf2c0;
+	outline: none;
+	border: none;
+}
+.accordion-button:not(.collapsed) {
+	background-color: #bf8069;
+	color: #fbf2c0;
+}
+.accordion-button:not(.collapsed)::after {
+	background-image: none;
+}
+
+.accordion-header {
+	border-radius: 0, 7rem;
+	background-color: none;
+}
+.accordion-item {
 	padding: 0;
 	transition: padding 0.4s;
 	border-radius: 0.7rem;
@@ -231,7 +256,7 @@
 	transition: transform 0.4s;
 }
 
-.questions_title {
+.accordion-button collapsed {
 	cursor: pointer;
 	font-size: 1.3rem;
 	display: flex;
@@ -252,7 +277,7 @@
 }
 
 .tl {
-    padding-left: 10px;
+	padding-left: 10px;
 }
 
 @media (min-width: 2000px) {
@@ -284,5 +309,3 @@
 		font-size: 1.5rem;
 	}
 }
-
-
