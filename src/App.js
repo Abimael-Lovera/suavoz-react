@@ -7,6 +7,7 @@ import Footer from "./components/footer/Footer";
 import Age from "./pages/api/ageGroup/Age";
 import AgeEdit from "./pages/api/ageGroup/Edit/AgeEdit";
 import AgePost from "./pages/api/ageGroup/Post/AgePost";
+import Dashboard from "./pages/Dashboard/Index";
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 				<Route path='/api/age' element={<Age />} />
 				<Route path='/api/age/post' element={<AgePost />} />
 				<Route path='/api/age/edit/:id' element={<AgeEdit />} />
+				<Route path='/dashboard' element={<Dashboard />} />
 			</Routes>
 			<Footer />
 		</>

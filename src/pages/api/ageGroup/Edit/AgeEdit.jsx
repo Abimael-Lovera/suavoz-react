@@ -48,7 +48,7 @@ export default function AgeEdit() {
 			<div className={styles.post}>
 				<div className={styles.container}>
 					<header className={styles.titulo}>
-						<h1 class>Editar Faixa Etária</h1>
+						<h2 className={styles.titulo}>Editar Faixa Etária</h2>
 					</header>
 					<form className={styles.form} onSubmit={handleSubmit(addAge)}>
 						<div className={styles.fields}>
