@@ -68,7 +68,6 @@ button#logout:hover {
 	outline: none;
 }
 
-
 .footer__container {
 	background: var(--color-preto);
 }
@@ -82,12 +81,19 @@ button#logout:hover {
 }
 .footer__header {
 	display: flex;
-	flex-direction: column;
+	gap: 5px;
 	color: var(--color-title-light);
 }
 .footer__body {
 	display: flex;
 	gap: 1rem;
+}
+.linksLgpd{
+	text-decoration: none;
+	color: var(--color-bg);
+}
+.linksLgpd:hover{
+	color: var(--color-maltesse);
 }
 .footer__item {
 	list-style: none;

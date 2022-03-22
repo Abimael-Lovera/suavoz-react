@@ -1,5 +1,5 @@
 import React from "react";
-import logoHeader from "../../assets/img/logoSuaVozHeader.png";
+import logoHeader from "../../assets/logoSuaVozHeader.png";
 import "../../components/Layout.css";
 
 
