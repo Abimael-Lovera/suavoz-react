@@ -1,51 +1,48 @@
 import React from "react";
 import "../../components/Layout.css";
+import logoFooter from "../../assets/suaVoz-bege.png";
 
 export default function Footer() {
   return (
     <>
-      <footer className=" footer text-muted">
-        <div className="container">
-          &copy; 2022 - SuaVoz -{" "}
-          <a asp-area="" asp-controller="Home" asp-action="Privacy">
-            Privacidade
-          </a>{" "}
-          /
-          <a asp-area="" asp-controller="Home" asp-action="Termos">
-            Termos de Uso
-          </a>
-        </div>
-      </footer>
-      <footer class="footer__container">
-        <div class="footer__content container">
-          <div class="footer__header">
-            <img src="~/img/suaVoz-bege.png" alt="" class="footer__logo" />
-            <p class="footer__paragraph">&copy; 2021 Company, Inc</p>
+      <footer className="footer__container">
+        <div className="footer__content container">
+          <div className="footer__header">
+            
+            <div className="logoETextoFooter">
+              <img src={logoFooter} alt="logo Sua Voz" />
+              <p className="container">
+                &copy; 2022 - SuaVoz -
+                <a className="linksLgpd" href=""> Privacidade </a>
+                | 
+                <a className="linksLgpd" href=""> Termos de Uso</a>
+              </p>
+            </div>
           </div>
-          <ul class="footer__body">
-            <li class="footer__item">
-              <a href="#" class="footer__links">
-                <i class="fa-brands fa-instagram social__media"></i>
+          <ul className="footer__body">
+            <li className="footer__item">
+              <a href="#" className="footer__links">
+                <i className="fa-brands fa-instagram social__media"></i>
               </a>
             </li>
-            <li class="footer__item">
-              <a href="#" class="footer__links">
-                <i class="fa-brands fa-facebook social__media"></i>
+            <li className="footer__item">
+              <a href="#" className="footer__links">
+                <i className="fa-brands fa-facebook social__media"></i>
               </a>
             </li>
-            <li class="footer__item">
-              <a href="#" class="footer__links">
-                <i class="fa-brands fa-twitter social__media"></i>
+            <li className="footer__item">
+              <a href="#" className="footer__links">
+                <i className="fa-brands fa-twitter social__media"></i>
               </a>
             </li>
-            <li class="footer__item">
-              <a href="#" class="footer__links">
-                <i class="fa-brands fa-youtube social__media"></i>
+            <li className="footer__item">
+              <a href="#" className="footer__links">
+                <i className="fa-brands fa-youtube social__media"></i>
               </a>
             </li>
-            <li class="footer__item">
-              <a href="#" class="footer__links">
-                <i class="fa-brands fa-twitch social__media"></i>
+            <li className="footer__item">
+              <a href="#" className="footer__links">
+                <i className="fa-brands fa-twitch social__media"></i>
               </a>
             </li>
           </ul>

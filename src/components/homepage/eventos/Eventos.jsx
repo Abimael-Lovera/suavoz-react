@@ -1,6 +1,6 @@
-import Djamila from "../../../assets/img/Djamila-Ribeiro.jpg";
-import Silvio from "../../../assets/img/silvioalmeida.jpg";
-import Sueli from "../../../assets/img/sueli-carneiro.jpg";
+import Djamila from "../../../assets/Djamila-Ribeiro.jpg";
+import Silvio from "../../../assets/silvioalmeida.jpg";
+import Sueli from "../../../assets/sueli-carneiro.jpg";
 import "../Homepage.css";
 
 export default function Eventos() {
@@ -12,7 +12,7 @@ export default function Eventos() {
 
           <div className="lives__content">
 
-          <div data-aos="zoom-out-up">
+          <div data-aos="zoom-out-up" data-aos-delay="500">
             <article className="lives_card">
                 <picture className="lives_card-img">
                     <img
@@ -38,7 +38,7 @@ export default function Eventos() {
           </div>
 
 
-            <div data-aos="zoom-out-up">
+            <div data-aos="zoom-out-up" data-aos-delay="500">
                 <article className="lives_card">
                 <picture className="lives_card-img">
                     <img
@@ -63,7 +63,7 @@ export default function Eventos() {
                 </article>
             </div>
 
-            <div data-aos="zoom-out-up">
+            <div data-aos="zoom-out-up" data-aos-delay="500">
                 <article className="lives_card">
                 <picture className="lives_card-img">
                     <img
