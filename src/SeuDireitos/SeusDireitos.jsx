@@ -51,7 +51,7 @@ export default function SeusDireitos() {
 								</h4>
 								<button class='card-btn'>
 									<a
-										href='#'
+										href='#.'
 										class='direitosBodys_card-btn'
 										data-bs-toggle='modal'
 										data-bs-target='#modal1'
@@ -74,7 +74,7 @@ export default function SeusDireitos() {
 								<h4 class='direitosBodys_card-title'>Abordagens Policiais</h4>
 								<button class='card-btn'>
 									<a
-										href='#'
+										href='#.'
 										class='direitosBodys_card-btn'
 										data-bs-toggle='modal'
 										data-bs-target='#modal2'
@@ -97,7 +97,7 @@ export default function SeusDireitos() {
 								<h4 class='direitosBodys_card-title'>Cotas Raciais</h4>
 								<button class='card-btn'>
 									<a
-										href='#'
+										href='#.'
 										class='direitosBodys_card-btn'
 										data-bs-toggle='modal'
 										data-bs-target='#modal3'
@@ -122,7 +122,7 @@ export default function SeusDireitos() {
 								</h4>
 								<button class='card-btn'>
 									<a
-										href='#'
+										href='#.'
 										class='direitosBodys_card-btn'
 										data-bs-toggle='modal'
 										data-bs-target='#modal4'
@@ -148,7 +148,7 @@ export default function SeusDireitos() {
 								</h4>
 								<button class='card-btn'>
 									<a
-										href='#'
+										href='#.'
 										class='direitosBodys_card-btn'
 										data-bs-toggle='modal'
 										data-bs-target='#modal5'
@@ -172,7 +172,7 @@ export default function SeusDireitos() {
 				>
 					<div class='modal-dialog modal-lg modal-bottom-left modal-side'>
 						<div class='modal-content'>
-							<a class='modal__close-btn' data-bs-dismiss='modal'>
+							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 							<div class='modal-body'>
@@ -207,7 +207,7 @@ export default function SeusDireitos() {
 									garantindo acesso à Justiça e à Segurança.
 								</p>
 							</div>
-							<a class='modal__close-btn' data-bs-dismiss='modal'>
+							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 						</div>
@@ -223,7 +223,11 @@ export default function SeusDireitos() {
 				>
 					<div class='modal-dialog modal-lg'>
 						<div class='modal-content'>
-							<a class='text-center modal__close-btn' data-bs-dismiss='modal'>
+							<a
+								class='text-center modal__close-btn'
+								data-bs-dismiss='modal'
+								href='#.'
+							>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 							<div class='modal-body'>
@@ -430,7 +434,7 @@ export default function SeusDireitos() {
 									</div>
 								</section>
 							</div>
-							<a class='modal__close-btn' data-bs-dismiss='modal'>
+							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 						</div>
@@ -446,7 +450,7 @@ export default function SeusDireitos() {
 				>
 					<div class='modal-dialog modal-lg'>
 						<div class='modal-content'>
-							<a class='modal__close-btn' data-bs-dismiss='modal'>
+							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 							<div class='modal-body'>
@@ -636,7 +640,7 @@ export default function SeusDireitos() {
 								</section>
 							</div>
 
-							<a class='modal__close-btn' data-bs-dismiss='modal'>
+							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 						</div>
@@ -652,7 +656,7 @@ export default function SeusDireitos() {
 				>
 					<div class='modal-dialog modal-lg modal-bottom-left modal-side'>
 						<div class='modal-content'>
-							<a class='modal__close-btn' data-bs-dismiss='modal'>
+							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 							<div class='modal-body'>
@@ -892,7 +896,7 @@ export default function SeusDireitos() {
 									</section>
 								</section>
 							</div>
-							<a class='modal__close-btn' data-bs-dismiss='modal'>
+							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 						</div>
@@ -908,13 +912,11 @@ export default function SeusDireitos() {
 				>
 					<div class='modal-dialog modal-lg modal-dialog-centered'>
 						<div class='modal-content'>
-							<a class='modal__close-btn' data-bs-dismiss='modal'>
+							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 							<div class='modal-body'>
 								<section class='questions container'>
-									<h3 class='subtitle'></h3>
-
 									<section class='questions_container'>
 										<article class='questions_padding'>
 											<div class='questions_answer'>
@@ -1049,7 +1051,7 @@ export default function SeusDireitos() {
 									</section>
 								</section>
 							</div>
-							<a class='modal__close-btn' data-bs-dismiss='modal'>
+							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 						</div>
@@ -1065,11 +1067,11 @@ export default function SeusDireitos() {
 				>
 					<div class='modal-dialog modal-lg modal-bottom-left modal-side'>
 						<div class='modal-content'>
-							<a class='modal__close-btn' data-bs-dismiss='modal'>
+							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 							<div class='modal-body'></div>
-							<a class='modal__close-btn' data-bs-dismiss='modal'>
+							<a class='modal__close-btn' data-bs-dismiss='modal' href='#.'>
 								<i class='fa-solid fa-circle-xmark'></i>
 							</a>
 						</div>
