@@ -9,7 +9,6 @@ import Footer from '../../components/footer/Footer';
 export default function Homepage() {
 	return (
 		<>
-			<Header></Header>
 			<Hero></Hero>
 			<Conquistas></Conquistas>
 			<StartTheFeaturettes></StartTheFeaturettes>
