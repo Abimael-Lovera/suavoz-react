@@ -1,4 +1,4 @@
-import '../../components/Layout.css';
+import '../../Layout.css';
 import suavozbege from '../../assets/suaVoz-bege.png';
 
 export default function Footer() {

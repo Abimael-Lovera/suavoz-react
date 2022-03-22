@@ -2,7 +2,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import SeusDireitos from './pages/SeuDireitos/SeusDireitos';
 import SobreNos from './pages/SobreNos/SobreNos';
-import Homepage from './components/homepage/Homepage';
+import Homepage from './pages/homepage/Homepage';
 
 function App() {
 	return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Homepage.css';
-import '../../Layout.css';
+import '../../../Layout.css';
 import img1Graficos from '../../../assets/grafico1StartTheFeaturettes.png';
 import img2Graficos from '../../../assets/grafico2StartTheFeaturettes.png';
 
