@@ -1,13 +1,13 @@
 import React from 'react';
 import './SobreNos.css';
-import jonatan from '../assets/jonatan.png';
-import gustavo from '../assets/gustavo.png';
-import fernando from '../assets/fernando.png';
-import renan from '../assets/renan.png';
-import abimael from '../assets/abimael.png';
-import rodrigo from '../assets/rodrigo (1).png';
-import update from '../assets/update.svg';
-import coletando from '../assets/coletando.svg';
+import jonatan from '../../assets/jonatan.png';
+import gustavo from '../../assets/gustavo.png';
+import fernando from '../../assets/fernando.png';
+import renan from '../../assets/renan.png';
+import abimael from '../../assets/abimael.png';
+import rodrigo from '../../assets/rodrigo (1).png';
+import update from '../../assets/update.svg';
+import coletando from '../../assets/coletando.svg';
 
 export default function SobreNos() {
 	return (

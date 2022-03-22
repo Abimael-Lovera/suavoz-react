@@ -22,7 +22,7 @@
 /* Hero Rights */
 .heroRights__container {
 	background: var(--color-preto);
-	background-image: url(../assets/racismo22.png);
+	background-image: url(../../assets/racismo22.png);
 }
 .heroRights__content {
 	display: flex;

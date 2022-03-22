@@ -1,11 +1,11 @@
 import React from 'react';
 import './SeusDireitos.css';
-import abordagem from '../assets/abordagem policial.jpg';
-import igualdade from '../assets/leidaigualdaderacial.jpg';
-import cotas from '../assets/cotasraciais.jpg';
-import saude from '../assets/Saúde.png';
-import racismo from '../assets/racismo.png';
-import mulher from '../assets/mulher.png';
+import abordagem from '../../assets/abordagem policial.jpg';
+import igualdade from '../../assets/leidaigualdaderacial.jpg';
+import cotas from '../../assets/cotasraciais.jpg';
+import saude from '../../assets/Saúde.png';
+import racismo from '../../assets/racismo.png';
+import mulher from '../../assets/mulher.png';
 
 export default function SeusDireitos() {
 	return (

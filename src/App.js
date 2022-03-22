@@ -1,7 +1,7 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import SeusDireitos from './SeuDireitos/SeusDireitos';
-import SobreNos from './SobreNos/SobreNos';
+import SeusDireitos from './pages/SeuDireitos/SeusDireitos';
+import SobreNos from './pages/SobreNos/SobreNos';
 import Homepage from './components/homepage/Homepage';
 
 function App() {
