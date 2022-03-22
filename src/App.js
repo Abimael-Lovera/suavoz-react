@@ -3,6 +3,7 @@ import SeusDireitos from "./pages/SeuDireitos/SeusDireitos";
 import SobreNos from "./pages/SobreNos/SobreNos";
 import Homepage from "./pages/homepage/Homepage";
 import Navbar from "./components/NavBar/Navbar";
+import Footer from "./components/footer/Footer";
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 				<Route path='/direitos' element={<SeusDireitos />} />
 				<Route path='/sobre' element={<SobreNos />} />
 			</Routes>
+			<Footer />
 		</>
 	);
 }

@@ -3,7 +3,6 @@ import React from "react";
 import Conquistas from "./conquistas/Conquistas";
 import StartTheFeaturettes from "./start the featurettes/StartTheFeaturettes";
 import Eventos from "./eventos/Eventos";
-import Footer from "../../components/footer/Footer";
 import FormContato from "./FormContato/FormContato";
 import Parceiros from "./Parceiros/Parceiros";
 
@@ -16,7 +15,6 @@ export default function Homepage() {
 			<Eventos></Eventos>
 			<Parceiros />
 			<FormContato />
-			<Footer></Footer>
 		</>
 	);
 }
