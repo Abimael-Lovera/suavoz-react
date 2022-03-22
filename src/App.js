@@ -4,6 +4,9 @@ import SobreNos from "./pages/SobreNos/SobreNos";
 import Homepage from "./pages/homepage/Homepage";
 import Navbar from "./components/NavBar/Navbar";
 import Footer from "./components/footer/Footer";
+import Age from "./pages/api/ageGroup/Age";
+import AgeEdit from "./pages/api/ageGroup/Edit/AgeEdit";
+import AgePost from "./pages/api/ageGroup/Post/AgePost";
 
 function App() {
 	return (
@@ -13,6 +16,9 @@ function App() {
 				<Route path='/' element={<Homepage />} />
 				<Route path='/direitos' element={<SeusDireitos />} />
 				<Route path='/sobre' element={<SobreNos />} />
+				<Route path='/api/age' element={<Age />} />
+				<Route path='/api/age/post' element={<AgePost />} />
+				<Route path='/api/age/edit/:id' element={<AgeEdit />} />
 			</Routes>
 			<Footer />
 		</>
