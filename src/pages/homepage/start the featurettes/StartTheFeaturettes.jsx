@@ -16,7 +16,7 @@ export default function StartTheFeaturettes() {
 					<div className='features__content'>
 						<article className='features__article'>
 							<h4 className='features__article-title order-lg-0 order-1'>
-								Dados das denúncia baseadas em Regiões.
+								Dados das denúncias baseadas em Regiões.
 							</h4>
 							{/* <img
 								src={img1Graficos}
@@ -34,7 +34,7 @@ export default function StartTheFeaturettes() {
 							<HomeGrapAge />
 
 							<h4 className='features__article-title'>
-								Dados das denuncias sobre a faixa etária
+								Dados das denúncias sobre a faixa etária.
 							</h4>
 						</article>
 					</div>

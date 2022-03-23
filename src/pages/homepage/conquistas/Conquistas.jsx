@@ -1,13 +1,13 @@
-import React from "react";
-import "../Homepage.css";
+import React from 'react';
+import '../Homepage.css';
 
 export default function Conquistas() {
-	const counters = document.querySelectorAll(".conquistas__card-number");
+	const counters = document.querySelectorAll('.conquistas__card-number');
 
 	counters.forEach(counter => {
-		counter.innerText = "0";
+		counter.innerText = '0';
 		const updateCounter = () => {
-			const target = +counter.getAttribute("data-target");
+			const target = +counter.getAttribute('data-target');
 			// console.log(typeof target, target);
 			const c = +counter.innerText;
 			const increment = target / 100;
@@ -41,7 +41,7 @@ export default function Conquistas() {
 								<i className='fa-solid fa-users' />
 							</span>
 							<div className='conquistas__card-number' data-target='20'>
-								20
+								150
 							</div>
 							<h5 className='conquistas__card-title'>Usuários</h5>
 						</div>
@@ -50,7 +50,7 @@ export default function Conquistas() {
 								<i className='fa-solid fa-city' />
 							</span>
 							<div className='conquistas__card-number' data-target='150'>
-								150
+								25
 							</div>
 							<h5 className='conquistas__card-title'>Cidades Alcançadas</h5>
 						</div>
