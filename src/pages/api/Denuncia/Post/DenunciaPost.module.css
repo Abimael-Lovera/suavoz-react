@@ -1,0 +1,9 @@
+.titulo {
+	margin: 100px;
+	padding: 1.5rem;
+	background-color: var(--color-black);
+	border-radius: 20px;
+	color: var(--color-beige);
+	text-align: center;
+	font-family: poppins;
+}
