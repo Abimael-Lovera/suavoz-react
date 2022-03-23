@@ -1,43 +1,46 @@
-import { Link } from 'react-router-dom';
-import './Navbar.css';
-import $ from 'jquery';
-import React, { useEffect } from 'react';
+import { Link } from "react-router-dom";
+import "./Navbar.css";
+import $ from "jquery";
+import React, { useEffect } from "react";
+import { useAuth0 } from "@auth0/auth0-react";
 
-import logoHeader from '../../assets/logoSuaVozHeader.png';
+import logoHeader from "../../assets/logoSuaVozHeader.png";
 
 const Navbar = () => {
+	const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
+
 	function animation() {
-		var tabsNewAnim = $('#navbarSupportedContent');
-		var activeItemNewAnim = tabsNewAnim.find('.active');
+		var tabsNewAnim = $("#navbarSupportedContent");
+		var activeItemNewAnim = tabsNewAnim.find(".active");
 		var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
 		var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
 		var itemPosNewAnimTop = activeItemNewAnim.position();
 		var itemPosNewAnimLeft = activeItemNewAnim.position();
-		$('.hori-selector').css({
-			top: itemPosNewAnimTop.top + 'px',
-			left: itemPosNewAnimLeft.left + 'px',
-			height: activeWidthNewAnimHeight + 'px',
-			width: activeWidthNewAnimWidth + 'px',
+		$(".hori-selector").css({
+			top: itemPosNewAnimTop.top + "px",
+			left: itemPosNewAnimLeft.left + "px",
+			height: activeWidthNewAnimHeight + "px",
+			width: activeWidthNewAnimWidth + "px",
 		});
-		$('#navbarSupportedContent').on('click', 'li', function (e) {
-			$('#navbarSupportedContent ul li').removeClass('active');
-			$(this).addClass('active');
+		$("#navbarSupportedContent").on("click", "li", function (e) {
+			$("#navbarSupportedContent ul li").removeClass("active");
+			$(this).addClass("active");
 			var activeWidthNewAnimHeight = $(this).innerHeight();
 			var activeWidthNewAnimWidth = $(this).innerWidth();
 			var itemPosNewAnimTop = $(this).position();
 			var itemPosNewAnimLeft = $(this).position();
-			$('.hori-selector').css({
-				top: itemPosNewAnimTop.top + 'px',
-				left: itemPosNewAnimLeft.left + 'px',
-				height: activeWidthNewAnimHeight + 'px',
-				width: activeWidthNewAnimWidth + 'px',
+			$(".hori-selector").css({
+				top: itemPosNewAnimTop.top + "px",
+				left: itemPosNewAnimLeft.left + "px",
+				height: activeWidthNewAnimHeight + "px",
+				width: activeWidthNewAnimWidth + "px",
 			});
 		});
 	}
 
 	useEffect(() => {
 		animation();
-		$(window).on('resize', function () {
+		$(window).on("resize", function () {
 			setTimeout(function () {
 				animation();
 			}, 500);
@@ -97,22 +100,35 @@ const Navbar = () => {
 					</li>
 
 					<li className='nav-item'>
-						<Link className='nav-link' to='Entrar'>
-							<i className='fa-solid fa-circle-arrow-right'></i>Entrar
-						</Link>
-					</li>
-
-					<li className='nav-item'>
-						<Link className='nav-link' to='Cadastrar'>
-							<i className='fas fa-sign-in-alt'></i>Criar conta
-						</Link>
-					</li>
-
-					<li className='nav-item'>
 						<Link className='nav-link' to='Denuncias'>
 							<i className='fas fa-edit'></i>Denuncias
 						</Link>
 					</li>
+
+					{!isAuthenticated ? (
+						<li className='nav-item'>
+							<Link
+								className='nav-link'
+								to='/'
+								onClick={() => loginWithRedirect()}
+							>
+								<i className='fa-solid fa-circle-arrow-right'></i>Entrar
+							</Link>
+						</li>
+					) : (
+						<>
+							<li className='nav-item'>
+								<Link className='nav-link' to='/' onClick={() => logout()}>
+									{user?.email}
+								</Link>
+							</li>
+							<li className='nav-item'>
+								<Link className='nav-link' to='/' onClick={() => logout()}>
+									<i className='fa-solid fa-circle-arrow-right'></i>Sair
+								</Link>
+							</li>
+						</>
+					)}
 				</ul>
 			</div>
 		</nav>
