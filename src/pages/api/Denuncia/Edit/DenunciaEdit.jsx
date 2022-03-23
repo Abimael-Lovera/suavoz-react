@@ -115,7 +115,7 @@ export default function DenunciaEdit() {
 		Api.put(`/report/${id}`, test)
 			.then(() => {
 				console.log('Deu Tudo Certo');
-				navigate('/perfil');
+				navigate('/perfil/denuncia');
 			})
 			.catch(() => {
 				console.log('Deu Errado');

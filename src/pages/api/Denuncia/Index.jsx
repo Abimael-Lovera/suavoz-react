@@ -31,6 +31,10 @@ export default function Denuncia() {
 			<div className={styles.Age}>
 				<div className='container '>
 					<h1 className={styles.titulo}>Vejas suas denúncias</h1>
+					<br />
+					<Link to='/perfil' className={styles.btn}>
+						Voltar
+					</Link>
 					<div className='container'>
 						<section className={styles.cards}>
 							{denuncias.map(res => {

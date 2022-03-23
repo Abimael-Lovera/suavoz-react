@@ -26,8 +26,7 @@
 	text-align: center;
 	padding: 1.5rem;
 	font-family: poppins;
-	background: #262626;
-	box-shadow: inset 20px -20px 60px #202020, inset -20px 20px 60px #2c2c2c;
+	background: var(--color-black);
 }
 
 .containerGrafico {
@@ -35,4 +34,21 @@
 	grid-template-columns: 1fr 1fr;
 	gap: 3rem;
 	/* justify-content: space-between; */
+}
+.btn {
+	text-decoration: none;
+	background: var(--color-black);
+	color: var(--color-beige);
+	border: 2px solid var(--color-black);
+	padding: 0.4rem 1rem;
+	font-weight: 500;
+	margin: 1rem;
+	transition: 300ms ease-in;
+	border-radius: 5px;
+}
+.btn:hover {
+	color: var(--color-black);
+	border: 2px solid var(--color-black);
+
+	background: transparent;
 }

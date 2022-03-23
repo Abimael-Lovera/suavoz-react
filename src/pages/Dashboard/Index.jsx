@@ -10,8 +10,8 @@ export default function Dashboard() {
 		<div className={styles.conteudo}>
 			<div className='container'>
 				<h1 className={styles.titulo}>Dashboard</h1>
-				<Link to='/perfil/denuncia' className='btn btn-secondary'>
-					{' '}
+				<br />
+				<Link to='/perfil/denuncia' className={styles.btn}>
 					Veja suas denúncias
 				</Link>
 				<h3 className={styles.titulo}>Gráficos</h3>

@@ -73,7 +73,7 @@ const Navbar = () => {
 			</button>
 
 			<div className='collapse navbar-collapse' id='navbarSupportedContent'>
-				<div className='mx-auto'></div>
+				{/* <div className='mx-auto'></div> */}
 
 				<ul className='navbar-nav ml-auto'>
 					<div className='hori-selector'>
@@ -98,9 +98,8 @@ const Navbar = () => {
 							<i className='fas fa-hands-helping  '></i>Seus direitos
 						</Link>
 					</li>
-
 					<li className='nav-item'>
-						<Link className='nav-link' to='/denuncia'>
+						<Link className='nav-link' to='/feed/denuncia'>
 							<i className='fas fa-edit'></i>Denuncias
 						</Link>
 					</li>
@@ -119,7 +118,7 @@ const Navbar = () => {
 						<>
 							<li className='nav-item'>
 								<Link className='nav-link' to='/perfil'>
-									{user?.email}
+									<i class='fa-solid fa-user-check'></i> {user?.email}
 								</Link>
 							</li>
 							<li className='nav-item'>
