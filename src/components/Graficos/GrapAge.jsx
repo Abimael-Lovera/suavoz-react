@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from "react";
-import { Chart } from "react-google-charts";
-import _ from "lodash";
-import styles from "./Grafico.module.css";
+import React, { useState, useEffect } from 'react';
+import { Chart } from 'react-google-charts';
+import _ from 'lodash';
+import styles from './Grafico.module.css';
 
-import Api from "../../services/Api";
+import Api from '../../services/Api';
 
 export const options = {
 	is3D: true,
-	backgroundColor: "transparent",
+	backgroundColor: 'transparent',
 };
 
 function GrapAge() {
 	const [ageGroup, set_ageGroup] = useState([]);
 
 	useEffect(() => {
-		Api.get("/report")
+		Api.get('/report')
 			.then(res => {
 				const data_ageGroup = res.data;
 				set_ageGroup(loadData_ageGroup(data_ageGroup));
@@ -24,13 +24,13 @@ function GrapAge() {
 
 	const loadData_ageGroup = data => {
 		const values = _.groupBy(data, value => value.ageGroup.ages);
-		console.log("values", values);
+		console.log('values', values);
 		const result = _.map(values, (value, key) => [
 			key,
 			_.lastIndexOf(values[key]),
 		]);
-		console.log("result", result);
-		return [["Faixa Etária", "Quantidade"], ...result];
+		console.log('result', result);
+		return [['Faixa Etária', 'Quantidade'], ...result];
 	};
 
 	return (

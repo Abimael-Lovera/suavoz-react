@@ -10,6 +10,7 @@ import AgePost from './pages/api/ageGroup/Post/AgePost';
 import Dashboard from './pages/Dashboard/Index';
 import Denuncia from './pages/api/Denuncia/Index';
 import DenunciaPost from './pages/api/Denuncia/Post/DenunciaPost';
+import DenunciaEdit from './pages/api/Denuncia/Edit/DenunciaEdit';
 
 function App() {
 	return (
@@ -25,6 +26,7 @@ function App() {
 				<Route path='/perfil' element={<Dashboard />} />
 				<Route path='/perfil/denuncia' element={<Denuncia />} />
 				<Route path='/perfil/denuncia/post' element={<DenunciaPost />} />
+				<Route path='/pefil/denuncia/edit/:id' element={<DenunciaEdit />} />
 			</Routes>
 			<Footer />
 		</>

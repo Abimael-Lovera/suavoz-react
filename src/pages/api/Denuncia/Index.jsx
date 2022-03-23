@@ -1,8 +1,8 @@
-import styles from "./Index.module.css";
-import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { useAuth0 } from "@auth0/auth0-react";
-import Api from "../../../services/Api";
+import styles from './Index.module.css';
+import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useAuth0 } from '@auth0/auth0-react';
+import Api from '../../../services/Api';
 
 export default function Denuncia() {
 	const { user, isAuthenticated } = useAuth0();
@@ -10,13 +10,13 @@ export default function Denuncia() {
 	const [denuncias, setDenuncias] = useState([]);
 
 	useEffect(() => {
-		Api.get("/report")
+		Api.get('/report')
 			.then(res => {
-				console.log("Get All deu certo", res.data);
+				console.log('Get All deu certo', res.data);
 				setDenuncias(res.data);
 			})
 			.catch(err => {
-				console.log("Get All ", err);
+				console.log('Get All ', err);
 			});
 	}, []);
 
@@ -44,7 +44,7 @@ export default function Denuncia() {
 												<span>Região:{res.zone.name}</span>
 												<Link
 													className={styles.btn_editar}
-													to={{ pathname: `/perfil/denuncia/edit/${res.id}` }}
+													to={{ pathname: `/pefil/denuncia/edit/${res.id}` }}
 												>
 													Editar
 												</Link>

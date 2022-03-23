@@ -3,9 +3,7 @@
 	--color-beige: #fbf2c0;
 	--color-skin: #bf8069;
 }
-body {
-	background: transparent;
-}
+
 .conteudo {
 	background: #bf8069;
 	padding-top: 50px;

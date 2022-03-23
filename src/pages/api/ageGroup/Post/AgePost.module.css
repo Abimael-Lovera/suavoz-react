@@ -8,8 +8,8 @@
 	flex: 1;
 	justify-content: center;
 	align-items: center;
-	height: 90vh;
-	font-family: "Poppins", sans-serif;
+	/* height: 90vh; */
+	font-family: 'Poppins', sans-serif;
 	background: var(--color-skin);
 }
 .container {

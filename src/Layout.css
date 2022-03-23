@@ -21,17 +21,18 @@
 }
 
 body {
-	font-family: "Poppins", sans-serif;
+	font-family: 'Poppins', sans-serif;
+	background: var(--color-preto) !important;
 }
 .title {
-	font-family: "Poppins", sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 2.5rem;
 	font-weight: 900;
 	color: var(--color-title);
 	text-align: center;
 }
 .title-light {
-	font-family: "Poppins", sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 2.5rem;
 	font-weight: 900;
 	color: var(--color-title-light);
@@ -67,9 +68,7 @@ button#logout:hover {
 	border: 2px solid var(--color-preto);
 	outline: none;
 }
-footer {
-	flex-shrink: 0;
-}
+
 .footer__container {
 	background: var(--color-preto);
 }
