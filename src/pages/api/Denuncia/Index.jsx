@@ -87,11 +87,7 @@ export default function Denuncia() {
 										</div>
 									);
 								}
-								return (
-									<>
-										<h2 key={res.id}>sem acesso</h2>
-									</>
-								);
+								return console.log('');
 							})}
 						</section>
 					</div>
