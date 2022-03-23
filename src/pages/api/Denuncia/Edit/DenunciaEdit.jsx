@@ -1,6 +1,6 @@
 import styles from './DenunciaEdit.module.css';
 
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Api from '../../../../services/Api';
 import { useForm } from 'react-hook-form';
@@ -127,9 +127,14 @@ export default function DenunciaEdit() {
 				<header className={styles.titulo}>
 					<h1 class>Criar Faixa Etária</h1>
 				</header>
+				<Link to='/perfil/denuncia' className={styles.btn}>
+					voltar
+				</Link>
+
 				<form className={styles.form} onSubmit={handleSubmit(addDenuncia)}>
 					<div className={styles.fields}>
-						<label htmlFor='email'>email</label>
+						<strong>Email</strong>
+						<label htmlFor='email'></label>
 						<input
 							type='text'
 							id='email'
@@ -141,7 +146,10 @@ export default function DenunciaEdit() {
 						/>
 					</div>
 					<div className={styles.fields}>
-						<label htmlFor='ageGroup'>faixa</label>
+						<label htmlFor='ageGroup'>
+							{' '}
+							<strong>Faixa Etária</strong>
+						</label>
 						<select
 							type='text'
 							id='ageGroup'
@@ -164,7 +172,10 @@ export default function DenunciaEdit() {
 						</select>
 					</div>
 					<div className={styles.fields}>
-						<label htmlFor='genre'>genre</label>
+						<label htmlFor='genre'>
+							{' '}
+							<strong>Gênero</strong>
+						</label>
 						<select
 							type='text'
 							id='genre'
@@ -188,7 +199,10 @@ export default function DenunciaEdit() {
 						{/* <p className={styles.error}>{errors.genre?.message}</p> */}
 					</div>
 					<div className={styles.fields}>
-						<label htmlFor='violenceType'>violenceType</label>
+						<label htmlFor='violenceType'>
+							{' '}
+							<strong>Tipo de violência</strong>
+						</label>
 						<select
 							type='text'
 							id='violenceType'
@@ -211,7 +225,10 @@ export default function DenunciaEdit() {
 						</select>
 					</div>
 					<div className={styles.fields}>
-						<label htmlFor='zone'>zone</label>
+						<label htmlFor='zone'>
+							{' '}
+							<strong>Região</strong>
+						</label>
 						<select
 							type='text'
 							id='zone'

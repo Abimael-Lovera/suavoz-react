@@ -2,7 +2,7 @@ import styles from './DenunciaPost.module.css';
 
 import Api from '../../../../services/Api';
 
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 
 import { useEffect, useState } from 'react';
@@ -108,11 +108,17 @@ export default function DenunciaPost() {
 			<div className={styles.postContainer}>
 				<div className={styles.container}>
 					<header className={styles.titulo}>
-						<h1 class>Criar Faixa Etária</h1>
+						<h1 class>Denúncia</h1>
 					</header>
+					<Link to='/perfil' className={styles.btn}>
+						voltar
+					</Link>
+
 					<form className={styles.form} onSubmit={handleSubmit(addDenuncia)}>
 						<div className={styles.fields}>
-							<label htmlFor='email'>email</label>
+							<label htmlFor='email'>
+								<strong>Email</strong>
+							</label>
 							<input
 								type='text'
 								id='email'
@@ -125,7 +131,9 @@ export default function DenunciaPost() {
 							/>
 						</div>
 						<div className={styles.fields}>
-							<label htmlFor='ageGroup'>faixa</label>
+							<label htmlFor='ageGroup'>
+								<strong>Faixa Etária</strong>
+							</label>
 							<select
 								type='text'
 								id='ageGroup'
@@ -148,7 +156,9 @@ export default function DenunciaPost() {
 							</select>
 						</div>
 						<div className={styles.fields}>
-							<label htmlFor='genre'>genre</label>
+							<label htmlFor='genre'>
+								<strong>Gênero</strong>
+							</label>
 							<select
 								type='text'
 								id='genre'
@@ -172,7 +182,9 @@ export default function DenunciaPost() {
 							{/* <p className={styles.error}>{errors.genre?.message}</p> */}
 						</div>
 						<div className={styles.fields}>
-							<label htmlFor='violenceType'>violenceType</label>
+							<label htmlFor='violenceType'>
+								<strong>Tipo de violência</strong>
+							</label>
 							<select
 								type='text'
 								id='violenceType'
@@ -195,7 +207,9 @@ export default function DenunciaPost() {
 							</select>
 						</div>
 						<div className={styles.fields}>
-							<label htmlFor='zone'>zone</label>
+							<label htmlFor='zone'>
+								<strong>Região</strong>
+							</label>
 							<select
 								type='text'
 								id='zone'
@@ -218,7 +232,9 @@ export default function DenunciaPost() {
 							</select>
 						</div>
 						<div className={styles.fields}>
-							<label htmlFor='description'>description</label>
+							<label htmlFor='description'>
+								<strong>Relato</strong>
+							</label>
 							<textarea
 								type='text'
 								id='description'

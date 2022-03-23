@@ -32,11 +32,16 @@ export default function DenunciaFeed() {
 								<article className={styles.card} key={res.id}>
 									<div className={styles.cardContent}>
 										{/* <span>Genero:{res.genre.name}</span>s */}
-										<span>Faixa etária: {res.ageGroup.ages}</span>
+										<span>
+											<strong>Faixa etária:</strong> {res.ageGroup.ages}
+										</span>
 										{/* <span>Tipo de Violencia: {res.violenceType.type}</span> */}
-										<span>Região:{res.zone.name}</span>
+										<span>
+											<strong>Região: </strong>
+											{res.zone.name}
+										</span>
 									</div>
-									<span>Descrição:{res.description}</span>
+									<span>{res.description}</span>
 								</article>
 							);
 						})}

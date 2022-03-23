@@ -5,6 +5,7 @@ import img1Graficos from '../../../assets/grafico1StartTheFeaturettes.png';
 import img2Graficos from '../../../assets/grafico2StartTheFeaturettes.png';
 import GrapZone from '../../../components/Graficos/GrapZone';
 import GrapAge from '../../../components/Graficos/GrapAge';
+import HomeGrapAge from '../../../components/Graficos/HomeGrapAge';
 
 export default function StartTheFeaturettes() {
 	return (
@@ -30,7 +31,7 @@ export default function StartTheFeaturettes() {
 								alt='evolução das taxas de homicios de negros'
 								className='features__article-img'
 							/> */}
-							<GrapAge />
+							<HomeGrapAge />
 
 							<h4 className='features__article-title'>
 								Dados das denuncias sobre a faixa etária

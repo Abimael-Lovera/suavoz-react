@@ -34,7 +34,7 @@
 	justify-content: center;
 	align-items: center;
 }
-.direitosHero__content {
+.direitosHero__content_h1 {
 	font-size: 2.5rem;
 	color: var(--color-bg);
 	padding: 0 1rem;

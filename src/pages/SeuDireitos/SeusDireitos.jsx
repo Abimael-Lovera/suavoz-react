@@ -12,7 +12,7 @@ export default function SeusDireitos() {
 		<section class='direitos'>
 			<div class='direitosHero'>
 				<div class='container direitosHero__content'>
-					<h1 class='direitosHero__content align-text'>
+					<h1 class='direitosHero__contenth1 align-text'>
 						Conheça <br />
 						seus <br /> Direitos
 					</h1>

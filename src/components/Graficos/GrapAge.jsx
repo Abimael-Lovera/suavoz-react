@@ -8,6 +8,7 @@ import Api from '../../services/Api';
 export const options = {
 	is3D: true,
 	backgroundColor: 'transparent',
+	colors: ['#ff595e', '#ffca3a', '#8ac926', '#1982c4', '#6a4c93'],
 };
 
 function GrapAge() {

@@ -327,7 +327,7 @@
 	background: var(--color-maltesse);
 	font-size: 1em;
 	color: var(--color-preto);
-	border: none;
+	border: 2px solid transparent;
 	padding: 0.7em 0;
 	border-radius: 0.2em;
 	cursor: pointer;

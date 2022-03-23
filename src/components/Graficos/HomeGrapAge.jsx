@@ -8,40 +8,48 @@ import Api from '../../services/Api';
 export const options = {
 	is3D: true,
 	backgroundColor: 'transparent',
-	colors: ['#ff595e', '#ffca3a', '#8ac926', '#1982c4', '#6a4c93'],
+	colors: [
+		'gray',
+		'#a71e34',
+		'#ff595e',
+		'#ffca3a',
+		'#8ac926',
+		'#1982c4',
+		'#6a4c93',
+	],
 };
 
-function GrapGenre() {
-	const [genre, set_genre] = useState([]);
+function HomeGrapAge() {
+	const [ageGroup, set_ageGroup] = useState([]);
 
 	useEffect(() => {
 		Api.get('/report')
 			.then(res => {
-				const data_genre = res.data;
-				set_genre(loadData_genre(data_genre));
+				const data_ageGroup = res.data;
+				set_ageGroup(loadData_ageGroup(data_ageGroup));
 			})
 			.catch(err => console.log(err));
 	}, []);
 
-	const loadData_genre = data => {
-		const values = _.groupBy(data, value => value.genre.name);
+	const loadData_ageGroup = data => {
+		const values = _.groupBy(data, value => value.ageGroup.ages);
 		console.log('values', values);
 		const result = _.map(values, (value, key) => [
 			key,
 			_.lastIndexOf(values[key]),
 		]);
 		console.log('result', result);
-		return [['Gênero', 'Quantidade'], ...result];
+		return [['Faixa Etária', 'Quantidade'], ...result];
 	};
 
 	return (
 		<div className={styles.grafico}>
 			<div className='d-flex justify-content-center'>
-				<h3 className={styles.titulo}>Gênero</h3>
+				<h3 className={styles.titulo}>Faixa Etária</h3>
 			</div>
 			<Chart
-				chartType='PieChart'
-				data={genre}
+				chartType='ColumnChart'
+				data={ageGroup}
 				className={styles.chart}
 				options={options}
 			/>
@@ -49,4 +57,4 @@ function GrapGenre() {
 	);
 }
 
-export default GrapGenre;
+export default HomeGrapAge;
