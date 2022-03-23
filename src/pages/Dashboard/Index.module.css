@@ -8,6 +8,7 @@
 	background: #bf8069;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	min-height: 85vh;
 }
 .container {
 	margin-top: 50px;
@@ -33,16 +34,23 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 3rem;
-	/* justify-content: space-between; */
+}
+
+.buttons {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
 }
 .btn {
+	width: fit-content;
 	text-decoration: none;
 	background: var(--color-black);
 	color: var(--color-beige);
 	border: 2px solid var(--color-black);
 	padding: 0.4rem 1rem;
 	font-weight: 500;
-	margin: 1rem;
 	transition: 300ms ease-in;
 	border-radius: 5px;
 }
@@ -51,4 +59,10 @@
 	border: 2px solid var(--color-black);
 
 	background: transparent;
+}
+@media (max-width: 1024px) {
+	.containerGrafico {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
 }

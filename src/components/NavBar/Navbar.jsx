@@ -111,7 +111,7 @@ const Navbar = () => {
 								to='/perfil'
 								onClick={() => loginWithRedirect()}
 							>
-								<i className='fa-solid fa-circle-arrow-right'></i>Entrar
+								<i className='fa-solid fa-right-to-bracket'></i>Entrar
 							</Link>
 						</li>
 					) : (
@@ -123,7 +123,9 @@ const Navbar = () => {
 							</li>
 							<li className='nav-item'>
 								<Link className='nav-link' to='/' onClick={() => logout()}>
-									<i className='fa-solid fa-circle-arrow-right'></i>Sair
+									<i className='fa-solid fa-right-from-bracket'></i>Sair
+									fa-right-from-bracket
+									{/* fa-circle-arrow-right */}
 								</Link>
 							</li>
 						</>

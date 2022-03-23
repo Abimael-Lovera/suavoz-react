@@ -18,9 +18,8 @@ export default function DenunciaPost() {
 		handleSubmit,
 		formState: { errors },
 	} = useForm({});
+
 	const addDenuncia = dados => {
-		console.log(dados);
-		console.log(dados.email);
 		const test = {
 			description: dados.description,
 			email: dados.email,
@@ -43,8 +42,9 @@ export default function DenunciaPost() {
 				console.log('Deu Tudo Certo');
 				navigate('/perfil');
 			})
-			.catch(() => {
+			.catch(err => {
 				console.log('Deu Errado');
+				console.log(err);
 			});
 	};
 

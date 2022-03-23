@@ -40,27 +40,51 @@ export default function Denuncia() {
 							{denuncias.map(res => {
 								if (user.email === res.email) {
 									return (
-										<article className={styles.card} key={res.id}>
-											<div className={styles.cardContent}>
-												<span>Genero:{res.genre.name}</span>
-												<span>Faixa etária: {res.ageGroup.ages}</span>
-												<span>Tipo de Violencia: {res.violenceType.type}</span>
-												<span>Região:{res.zone.name}</span>
-												<Link
-													className={styles.btn_editar}
-													to={{ pathname: `/pefil/denuncia/edit/${res.id}` }}
-												>
-													Editar
-												</Link>
-												<button
-													className={styles.btn_excluir}
-													onClick={() => deleteDenuncia(res.id)}
-												>
-													Excluir
-												</button>
-											</div>
-											<span>Descrição:{res.description}</span>
-										</article>
+										<div className={styles.containerCard}>
+											<p>
+												<strong>Descrição:</strong>
+												{res.description}
+											</p>
+
+											<article className={styles.card} key={res.id}>
+												<div className={styles.cardContent}>
+													<div className={styles.cardDiv}>
+														<span>
+															<strong>Genero: </strong>
+															{res.genre.name}
+														</span>
+														<span>
+															<strong>Faixa etária:</strong>
+															{res.ageGroup.ages}
+														</span>
+													</div>
+													<div className={styles.cardDiv}>
+														<span>
+															<strong>Tipo de Violencia:</strong>
+															{res.violenceType.type}
+														</span>
+														<span>
+															<strong>Região:</strong>
+															{res.zone.name}
+														</span>
+													</div>
+												</div>
+												<div className={styles.btns}>
+													<Link
+														className={styles.btn_editar}
+														to={{ pathname: `/pefil/denuncia/edit/${res.id}` }}
+													>
+														Editar
+													</Link>
+													<button
+														className={styles.btn_excluir}
+														onClick={() => deleteDenuncia(res.id)}
+													>
+														Excluir
+													</button>
+												</div>
+											</article>
+										</div>
 									);
 								}
 								return (

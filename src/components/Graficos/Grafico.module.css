@@ -13,9 +13,21 @@
 	border-radius: 20px;
 	background: #fbf2c0;
 	width: 450px;
-	min-width: 300px;
 }
 .chart {
 	width: 100%;
 	height: 100%;
+}
+@media (max-width: 500px) {
+	.grafico {
+		max-width: 350px;
+		width: 100%;
+		margin: auto 1rem;
+	}
+}
+
+@media (max-width: 400px) {
+	.grafico {
+		width: 250px;
+	}
 }

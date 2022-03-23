@@ -22,13 +22,14 @@
 /* Rights */
 .direitosHero {
 	background: var(--color-maltesse);
-	background-image: url("../../assets/wave.svg");
+	background-image: url('../../assets/wave.svg');
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: 100% auto;
 }
 
 .direitosHero__content {
+	margin-top: 70px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -39,6 +40,8 @@
 	padding: 0 1rem;
 	text-align: center;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .direitosHero__content-img {
 	width: 300px;
@@ -137,7 +140,7 @@
 }
 
 .card-btn:before {
-	content: "";
+	content: '';
 	position: absolute;
 	z-index: -1;
 	top: 0;

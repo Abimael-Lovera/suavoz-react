@@ -3,6 +3,7 @@ import SeusDireitos from './pages/SeuDireitos/SeusDireitos';
 import SobreNos from './pages/SobreNos/SobreNos';
 import Homepage from './pages/homepage/Homepage';
 import Navbar from './components/NavBar/Navbar';
+import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Age from './pages/api/ageGroup/Age';
 import AgeEdit from './pages/api/ageGroup/Edit/AgeEdit';
@@ -16,7 +17,7 @@ import DenunciaFeed from './pages/api/DenunciaFeed/Index';
 function App() {
 	return (
 		<>
-			<Navbar />
+			<Header />
 			<Routes>
 				<Route path='/' element={<Homepage />} />
 				<Route path='/direitos' element={<SeusDireitos />} />

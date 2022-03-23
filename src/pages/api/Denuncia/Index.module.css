@@ -20,36 +20,48 @@
 	font-family: poppins;
 }
 .cards {
-	/* border: 3px solid var(--color-black);s */
 	background: transparent;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 2rem;
-	padding: 2rem;
+	padding: 2rem 0;
 	justify-content: center;
 	align-items: center;
 }
-.card {
-	display: flex;
-	padding: 1.5rem;
-	gap: 1rem;
-	/* align-items: center; */
-	justify-content: space-between;
-	flex-direction: column;
-	width: 100%;
-	background: var(--color-black);
+.containerCard {
+	width: 75%;
 	border-radius: 20px;
-	background: #fbf2c0;
-	box-shadow: inset -20px -20px 60px #d5cea3, inset 20px 20px 60px #ffffdd;
+	background: var(--color-beige);
+	padding: 1.5rem;
+}
+.card {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 1rem;
+	width: 100%;
 }
 
 .cardContent {
 	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
+.cardDiv {
+	display: flex;
+	flex-direction: column;
+}
+
+.btns {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 1rem;
+}
+
 .btn_editar {
+	height: fit-content;
 	padding: 0.4rem 1rem;
 	color: var(--color-black);
 	background: transparent;
@@ -64,6 +76,7 @@
 }
 
 .btn_excluir {
+	height: fit-content;
 	padding: 0.4rem 1rem;
 	color: #dc3545;
 	background: transparent;
@@ -92,4 +105,17 @@
 	border: 2px solid var(--color-black);
 
 	background: transparent;
+}
+
+@media (max-width: 767px) {
+	.containerCard {
+		width: 100%;
+	}
+	.btns {
+		justify-content: center;
+	}
+
+	.card {
+		grid-template-columns: 1fr;
+	}
 }
