@@ -1,0 +1,121 @@
+:root {
+	--color-black: #262626;
+	--color-beige: #fbf2c0;
+	--color-skin: #bf8069;
+}
+
+.Age {
+	min-height: 85vh;
+	background: var(--color-skin);
+	margin-top: 50px;
+	padding-top: 3rem;
+}
+
+.titulo {
+	padding: 1.5rem;
+	background-color: var(--color-black);
+	border-radius: 20px;
+	color: var(--color-beige);
+	text-align: center;
+	font-family: poppins;
+}
+.cards {
+	background: transparent;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	padding: 2rem 0;
+	justify-content: center;
+	align-items: center;
+}
+.containerCard {
+	width: 75%;
+	border-radius: 20px;
+	background: var(--color-beige);
+	padding: 1.5rem;
+}
+.card {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 1rem;
+	width: 100%;
+}
+
+.cardContent {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.cardDiv {
+	display: flex;
+	flex-direction: column;
+}
+
+.btns {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 1rem;
+}
+
+.btn_editar {
+	height: fit-content;
+	padding: 0.4rem 1rem;
+	color: var(--color-black);
+	background: transparent;
+	border: 2px solid var(--color-black);
+	border-radius: 5px;
+	transition: 300ms ease-in;
+}
+
+.btn_editar:hover {
+	color: var(--color-beige);
+	background: var(--color-black);
+}
+
+.btn_excluir {
+	height: fit-content;
+	padding: 0.4rem 1rem;
+	color: #dc3545;
+	background: transparent;
+	border: 2px solid #dc3545;
+	border-radius: 5px;
+	transition: 300ms ease-in;
+}
+
+.btn_excluir:hover {
+	color: var(--color-beige);
+	background: #dc3545;
+}
+.btn {
+	text-decoration: none;
+	background: var(--color-black);
+	color: var(--color-beige);
+	border: 2px solid var(--color-black);
+	padding: 0.4rem 1rem;
+	font-weight: 500;
+	margin: 1rem;
+	transition: 300ms ease-in;
+	border-radius: 5px;
+}
+.btn:hover {
+	color: var(--color-black);
+	border: 2px solid var(--color-black);
+
+	background: transparent;
+}
+
+@media (max-width: 767px) {
+	.containerCard {
+		width: 100%;
+	}
+	.btns {
+		justify-content: center;
+	}
+
+	.card {
+		grid-template-columns: 1fr;
+	}
+}

@@ -1,0 +1,33 @@
+.titulo {
+	margin-top: 1.5rem;
+	background-color: var(--color-black);
+	border-radius: 20px;
+	color: var(--color-beige);
+	text-align: center;
+	padding: 1.5rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+	font-family: poppins;
+}
+.grafico {
+	border-radius: 20px;
+	background: #fbf2c0;
+	width: 450px;
+}
+.chart {
+	width: 100%;
+	height: 100%;
+}
+@media (max-width: 500px) {
+	.grafico {
+		max-width: 350px;
+		width: 100%;
+		margin: auto 1rem;
+	}
+}
+
+@media (max-width: 400px) {
+	.grafico {
+		width: 250px;
+	}
+}
