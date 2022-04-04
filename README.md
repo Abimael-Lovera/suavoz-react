@@ -37,6 +37,7 @@ O "SUA VOZ" tem como objetivo levar as denúncias aos órgãos competentes e tra
   
 > Autenticação com cadastro e login </br>
 > CRUD de denúncias </br>
+> Gráficos dinâmicos </br>
 > Responsividade </br>
   
   #
@@ -48,7 +49,9 @@ O "SUA VOZ" tem como objetivo levar as denúncias aos órgãos competentes e tra
 > HTML5 </br>
 > CSS3 </br>
 > Javascript </br>
-> Bootstrap
+> Bootstrap </br>
+> Auth0 </br>
+> Google Charts
 </div>
 
 <div>
