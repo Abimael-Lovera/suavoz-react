@@ -240,7 +240,7 @@ export default function DenunciaPost() {
 								id='description'
 								name='description'
 								{...register('description')}
-								placeholder='Digite description'
+								placeholder='Digite sua denúncia'
 								className={styles.inputArea}
 								required
 							></textarea>
