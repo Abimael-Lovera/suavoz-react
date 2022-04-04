@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+<div align="center">
+ 
+<img  width="800"  alt="Recode" justify-content="center" src="https://newsga.recode.org.br/assets/img/logo-recode-azul.png">
+  
+   <br>
+   <br>
+  
+<img  alt="Sua voz" justify-content="center" src="https://pbs.twimg.com/media/FPgrCBqWQAc8k1B?format=png&name=240x240">
+  
+   <br>
+   <br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+  <p>Projeto do <strong>Squad 14</strong> desenvolvido no curso Recode Pro</p>
+</div>
 
-In the project directory, you can run:
+<div>
+<h3> O Projeto </h3> 
+<p>
+  A plataforma "SUA VOZ", surge a partir da discussão de seis jovens estudantes, 
+  que buscam uma solução tecnológica para que a população negra seja atendida partindo da discriminação racial enfrentada por eles.
+</p>
+ 
+<p>
+  A missão plataforma "SUA VOZ" é ouvir pessoas que enfrentam o racismo enraizado na nossa sociedade, 
+  seja em forma de abuso policial, uma perseguição de um segurança numa loja, o constrangimento em uma entrevista de emprego 
+  e tantos outros problemas que infelizmente os negros enfrentam diariamente.
 
-### `npm start`
+O "SUA VOZ" tem como objetivo levar as denúncias aos órgãos competentes e transforma-las em dados para que o problema racial seja tratado 
+  e exposto com maior transparência. Nós precisamos enxergar o Brasil da maneira que ele realmente é, e negar o racismo é negar a vida e a 
+  dignidade de milhares de pessoas que poderiam estar colaborando com o desenvolvimento do país.
+</p>
+  
+  #
+  
+<h3> Resumo Tecnico </h3>
+  
+> Autenticação com cadastro e login </br>
+> CRUD de denúncias </br>
+> Responsividade </br>
+  
+  #
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h3> Stacks </h3>
 
-### `npm test`
+> React </br>
+> HTML5 </br>
+> CSS3 </br>
+> Javascript </br>
+> Bootstrap
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<div>
+<h3> Squad </h3>
 
-### `npm run build`
+> [Abimael Lovera](https://github.com/Abimael-Lovera) </br>
+> [Fernando Gaspar](https://github.com/FernandoGasparr) </br>
+> [Fernando Gustavo Silva](https://github.com/FeGustavo07) </br>
+> [Jonatan Vasconcelos](https://github.com/jonatanmk) </br>
+> [Renan Dos Reis](https://github.com/RenanReisFernandes) </br>
+> [Rodrigo Cunha](https://github.com/rodsluizz) </br>
+  
+</div>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div>
+</div>
