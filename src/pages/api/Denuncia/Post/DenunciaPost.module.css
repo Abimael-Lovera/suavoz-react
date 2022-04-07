@@ -11,7 +11,7 @@
 	font-family: 'Poppins', sans-serif;
 	background: var(--color-skin);
 	padding: 2rem;
-	margin-top: 70px;
+	
 }
 .container {
 	max-width: 500px;
@@ -98,5 +98,8 @@
 	}
 	.titulo {
 		font-size: 1.5rem;
+	}
+	.postContainer {
+		margin-top: 70px;
 	}
 }
